@@ -19,6 +19,8 @@
 		19A6544D19ECD75A0079BCC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A6543519ECD75A0079BCC3 /* UIKit.framework */; };
 		19A6545519ECD75A0079BCC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A6545319ECD75A0079BCC3 /* InfoPlist.strings */; };
 		19A6545719ECD75A0079BCC3 /* SimpleAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6545619ECD75A0079BCC3 /* SimpleAnimationsTests.m */; };
+		19A6546E19ED0AB90079BCC3 /* SimpleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6546C19ED0AB90079BCC3 /* SimpleAnimationViewController.m */; };
+		19A6546F19ED0AB90079BCC3 /* SimpleAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A6546D19ED0AB90079BCC3 /* SimpleAnimationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		19A6545219ECD75A0079BCC3 /* SimpleAnimationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleAnimationsTests-Info.plist"; sourceTree = "<group>"; };
 		19A6545419ECD75A0079BCC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19A6545619ECD75A0079BCC3 /* SimpleAnimationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAnimationsTests.m; sourceTree = "<group>"; };
+		19A6546B19ED0AB90079BCC3 /* SimpleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnimationViewController.h; sourceTree = "<group>"; };
+		19A6546C19ED0AB90079BCC3 /* SimpleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnimationViewController.m; sourceTree = "<group>"; };
+		19A6546D19ED0AB90079BCC3 /* SimpleAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleAnimationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				19A6544019ECD75A0079BCC3 /* AppDelegate.h */,
+				19A6546B19ED0AB90079BCC3 /* SimpleAnimationViewController.h */,
+				19A6546C19ED0AB90079BCC3 /* SimpleAnimationViewController.m */,
+				19A6546D19ED0AB90079BCC3 /* SimpleAnimationViewController.xib */,
 				19A6544119ECD75A0079BCC3 /* AppDelegate.m */,
 				19A6544319ECD75A0079BCC3 /* Images.xcassets */,
 				19A6543819ECD75A0079BCC3 /* Supporting Files */,
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A6543C19ECD75A0079BCC3 /* InfoPlist.strings in Resources */,
+				19A6546F19ED0AB90079BCC3 /* SimpleAnimationViewController.xib in Resources */,
 				19A6544419ECD75A0079BCC3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +250,7 @@
 			files = (
 				19A6544219ECD75A0079BCC3 /* AppDelegate.m in Sources */,
 				19A6543E19ECD75A0079BCC3 /* main.m in Sources */,
+				19A6546E19ED0AB90079BCC3 /* SimpleAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +308,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,7 +347,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleAnimations/SimpleAnimations-Prefix.pch";
 				INFOPLIST_FILE = "SimpleAnimations/SimpleAnimations-Info.plist";
@@ -370,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleAnimations/SimpleAnimations-Prefix.pch";
 				INFOPLIST_FILE = "SimpleAnimations/SimpleAnimations-Info.plist";
@@ -437,6 +451,7 @@
 				19A6545C19ECD75A0079BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19A6545D19ECD75A0079BCC3 /* Build configuration list for PBXNativeTarget "SimpleAnimationsTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +460,7 @@
 				19A6545F19ECD75A0079BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

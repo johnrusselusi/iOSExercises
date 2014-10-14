@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SimpleAnimationViewController.h
 //  SimpleAnimations
 //
 //  Created by John Russel Usi on 10/14/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SimpleAnimationViewController : UIViewController
 
 @end
