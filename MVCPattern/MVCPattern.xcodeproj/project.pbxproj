@@ -19,6 +19,8 @@
 		19A6550E19ED10FE0079BCC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A654F619ED10FE0079BCC3 /* UIKit.framework */; };
 		19A6551619ED10FE0079BCC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A6551419ED10FE0079BCC3 /* InfoPlist.strings */; };
 		19A6551819ED10FE0079BCC3 /* MVCPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6551719ED10FE0079BCC3 /* MVCPatternTests.m */; };
+		19A6552319ED12810079BCC3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6552219ED12810079BCC3 /* MainViewController.m */; };
+		19A6552C19ED19430079BCC3 /* Letter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6552B19ED19430079BCC3 /* Letter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		19A6551319ED10FE0079BCC3 /* MVCPatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVCPatternTests-Info.plist"; sourceTree = "<group>"; };
 		19A6551519ED10FE0079BCC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19A6551719ED10FE0079BCC3 /* MVCPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCPatternTests.m; sourceTree = "<group>"; };
+		19A6552119ED12810079BCC3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		19A6552219ED12810079BCC3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		19A6552A19ED19430079BCC3 /* Letter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letter.h; sourceTree = "<group>"; };
+		19A6552B19ED19430079BCC3 /* Letter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				19A6550119ED10FE0079BCC3 /* AppDelegate.h */,
+				19A6552119ED12810079BCC3 /* MainViewController.h */,
+				19A6552219ED12810079BCC3 /* MainViewController.m */,
+				19A6552A19ED19430079BCC3 /* Letter.h */,
+				19A6552B19ED19430079BCC3 /* Letter.m */,
 				19A6550219ED10FE0079BCC3 /* AppDelegate.m */,
 				19A6550419ED10FE0079BCC3 /* Images.xcassets */,
 				19A654F919ED10FE0079BCC3 /* Supporting Files */,
@@ -240,7 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A6550319ED10FE0079BCC3 /* AppDelegate.m in Sources */,
+				19A6552319ED12810079BCC3 /* MainViewController.m in Sources */,
 				19A654FF19ED10FE0079BCC3 /* main.m in Sources */,
+				19A6552C19ED19430079BCC3 /* Letter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +310,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,7 +349,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
