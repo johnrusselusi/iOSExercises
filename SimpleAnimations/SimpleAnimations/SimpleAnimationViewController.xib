@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleAnimationViewController">
             <connections>
+                <outlet property="animatedImage" destination="Vzj-82-SO7" id="hL1-iA-lQh"/>
                 <outlet property="bottomDoor" destination="meY-Jd-v8A" id="O5Y-Mh-MeQ"/>
                 <outlet property="topDoor" destination="Udd-1z-eGS" id="unw-BO-WUd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,6 +23,10 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fabric_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="WU2-mr-nQs">
                     <rect key="frame" x="0.0" y="242" width="320" height="326"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vzj-82-SO7">
+                    <rect key="frame" x="40" y="220" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door_top" translatesAutoresizingMaskIntoConstraints="NO" id="Udd-1z-eGS">

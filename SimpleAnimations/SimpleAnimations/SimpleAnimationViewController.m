@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *topDoor;
 @property (weak, nonatomic) IBOutlet UIImageView *bottomDoor;
+@property (weak, nonatomic) IBOutlet UIImageView *animatedImage;
 
 @end
 
@@ -26,6 +27,20 @@
                                                                                    action:@selector(openBasket:)];
   
   [self.view addGestureRecognizer:singleFingerTap];
+  
+  NSArray *imageNames = @[@"1.png", @"2.png"];
+  
+  NSMutableArray *images = [[NSMutableArray alloc] init];
+  for (int i = 0; i < imageNames.count; i++) {
+    [images addObject:[UIImage imageNamed:[imageNames objectAtIndex:i]]];
+  }
+  
+  //UIImageView *animationImageView = [[UIImageView alloc] initWithFrame:CGRectMake(60, 95, 86, 193)];
+  _animatedImage.frame = CGRectMake(60, 95, 86, 193);
+  _animatedImage.animationImages = images;
+  _animatedImage.animationDuration = 0.5;
+  
+  [_animatedImage startAnimating];
   
 }
 
