@@ -7,7 +7,15 @@
 //
 
 #import "MainViewController.h"
-#import "Letter.h"
+#import "LetterViewController.h"
+#import "NumberViewController.h"
+#import "ColorViewController.h"
+
+@interface MainViewController ()
+
+@property (nonatomic, strong) NSArray *classes;
+
+@end
 
 @implementation MainViewController
 
@@ -15,34 +23,13 @@
 
   [super viewDidLoad];
   
-  _letters = [[NSMutableArray alloc]init];
-  
-  for (int i = 0; i < 3; i++) {
-    
-    Letter *letter = [[Letter alloc]init];
-    
-    if (i == 0) {
-      
-      letter.character = @"A";
-      letter.information = @"1st letter of the alphabet";
-    } else if (i == 1) {
-    
-      letter.character = @"B";
-      letter.information = @"2nd letter of the alphabet";
-    } else if (i == 2) {
-    
-      letter.character = @"C";
-      letter.information = @"3rd letter of the alphabet";
-    }
-    
-    [_letters addObject:letter];
-  }
+  _classes = [[NSArray alloc]initWithObjects:@"Letters", @"Numbers", @"Colors", nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
 
-  return [_letters count];
+  return [_classes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -52,10 +39,27 @@
   [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
                         reuseIdentifier:@"UITableViewCell"];
   
-  Letter *letter = _letters[indexPath.row];
-  
-  cell.textLabel.text = [letter description];
+  cell.textLabel.text = _classes[indexPath.row];
   
   return cell;
 }
+
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+  if (indexPath.row == 0) {
+    
+    LetterViewController *lvc = [[LetterViewController alloc]initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:lvc animated:YES];
+  } else if (indexPath.row == 1){
+  
+    NumberViewController *nvc = [[NumberViewController alloc]initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:nvc animated:YES];
+  } else if (indexPath.row == 2){
+  
+    ColorViewController *cvc = [[ColorViewController alloc]initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:cvc animated:YES];
+  }
+}
+
 @end

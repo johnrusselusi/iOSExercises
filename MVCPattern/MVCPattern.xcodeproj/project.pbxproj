@@ -21,6 +21,13 @@
 		19A6551819ED10FE0079BCC3 /* MVCPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6551719ED10FE0079BCC3 /* MVCPatternTests.m */; };
 		19A6552319ED12810079BCC3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6552219ED12810079BCC3 /* MainViewController.m */; };
 		19A6552C19ED19430079BCC3 /* Letter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6552B19ED19430079BCC3 /* Letter.m */; };
+		19A773C119EDF8A400E4F684 /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773C019EDF8A400E4F684 /* Number.m */; };
+		19A773C419EDF8FD00E4F684 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773C319EDF8FD00E4F684 /* Color.m */; };
+		19A773C719EDF95900E4F684 /* LetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773C619EDF95900E4F684 /* LetterViewController.m */; };
+		19A773D119EDFFAF00E4F684 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773CF19EDFFAF00E4F684 /* DetailsViewController.m */; };
+		19A773D219EDFFAF00E4F684 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A773D019EDFFAF00E4F684 /* DetailsViewController.xib */; };
+		19A773D519EE0FE300E4F684 /* NumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773D419EE0FE300E4F684 /* NumberViewController.m */; };
+		19A773D819EE127A00E4F684 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773D719EE127A00E4F684 /* ColorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,19 @@
 		19A6552219ED12810079BCC3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		19A6552A19ED19430079BCC3 /* Letter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Letter.h; sourceTree = "<group>"; };
 		19A6552B19ED19430079BCC3 /* Letter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Letter.m; sourceTree = "<group>"; };
+		19A773BF19EDF8A400E4F684 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		19A773C019EDF8A400E4F684 /* Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Number.m; sourceTree = "<group>"; };
+		19A773C219EDF8FD00E4F684 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		19A773C319EDF8FD00E4F684 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		19A773C519EDF95900E4F684 /* LetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterViewController.h; sourceTree = "<group>"; };
+		19A773C619EDF95900E4F684 /* LetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterViewController.m; sourceTree = "<group>"; };
+		19A773CE19EDFFAF00E4F684 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		19A773CF19EDFFAF00E4F684 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		19A773D019EDFFAF00E4F684 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		19A773D319EE0FE300E4F684 /* NumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberViewController.h; sourceTree = "<group>"; };
+		19A773D419EE0FE300E4F684 /* NumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberViewController.m; sourceTree = "<group>"; };
+		19A773D619EE127A00E4F684 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		19A773D719EE127A00E4F684 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +135,20 @@
 			children = (
 				19A6550119ED10FE0079BCC3 /* AppDelegate.h */,
 				19A6552119ED12810079BCC3 /* MainViewController.h */,
+				19A773D619EE127A00E4F684 /* ColorViewController.h */,
+				19A773D719EE127A00E4F684 /* ColorViewController.m */,
 				19A6552219ED12810079BCC3 /* MainViewController.m */,
+				19A773C519EDF95900E4F684 /* LetterViewController.h */,
+				19A773C619EDF95900E4F684 /* LetterViewController.m */,
+				19A773BF19EDF8A400E4F684 /* Number.h */,
+				19A773C219EDF8FD00E4F684 /* Color.h */,
+				19A773C319EDF8FD00E4F684 /* Color.m */,
+				19A773CE19EDFFAF00E4F684 /* DetailsViewController.h */,
+				19A773CF19EDFFAF00E4F684 /* DetailsViewController.m */,
+				19A773D319EE0FE300E4F684 /* NumberViewController.h */,
+				19A773D419EE0FE300E4F684 /* NumberViewController.m */,
+				19A773D019EDFFAF00E4F684 /* DetailsViewController.xib */,
+				19A773C019EDF8A400E4F684 /* Number.m */,
 				19A6552A19ED19430079BCC3 /* Letter.h */,
 				19A6552B19ED19430079BCC3 /* Letter.m */,
 				19A6550219ED10FE0079BCC3 /* AppDelegate.m */,
@@ -231,6 +264,7 @@
 			files = (
 				19A654FD19ED10FE0079BCC3 /* InfoPlist.strings in Resources */,
 				19A6550519ED10FE0079BCC3 /* Images.xcassets in Resources */,
+				19A773D219EDFFAF00E4F684 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A773C719EDF95900E4F684 /* LetterViewController.m in Sources */,
 				19A6550319ED10FE0079BCC3 /* AppDelegate.m in Sources */,
+				19A773D519EE0FE300E4F684 /* NumberViewController.m in Sources */,
 				19A6552319ED12810079BCC3 /* MainViewController.m in Sources */,
 				19A654FF19ED10FE0079BCC3 /* main.m in Sources */,
+				19A773C419EDF8FD00E4F684 /* Color.m in Sources */,
+				19A773D819EE127A00E4F684 /* ColorViewController.m in Sources */,
 				19A6552C19ED19430079BCC3 /* Letter.m in Sources */,
+				19A773C119EDF8A400E4F684 /* Number.m in Sources */,
+				19A773D119EDFFAF00E4F684 /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +491,7 @@
 				19A6551D19ED10FE0079BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19A6551E19ED10FE0079BCC3 /* Build configuration list for PBXNativeTarget "MVCPatternTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +500,7 @@
 				19A6552019ED10FE0079BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

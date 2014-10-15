@@ -10,6 +10,4 @@
 
 @interface MainViewController : UITableViewController
 
-@property (strong, nonatomic) NSMutableArray *letters;
-
 @end
