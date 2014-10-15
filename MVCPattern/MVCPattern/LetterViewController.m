@@ -38,7 +38,6 @@
     
     [_letters addObject:letter];
   }
-
 }
 
 - (NSInteger)tableView:(UITableView *)tableView

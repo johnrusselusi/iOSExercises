@@ -28,6 +28,7 @@
 		19A773D219EDFFAF00E4F684 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A773D019EDFFAF00E4F684 /* DetailsViewController.xib */; };
 		19A773D519EE0FE300E4F684 /* NumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773D419EE0FE300E4F684 /* NumberViewController.m */; };
 		19A773D819EE127A00E4F684 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A773D719EE127A00E4F684 /* ColorViewController.m */; };
+		19A773DA19EE19F200E4F684 /* Something Strange.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A773D919EE167500E4F684 /* Something Strange.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		19A773D419EE0FE300E4F684 /* NumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberViewController.m; sourceTree = "<group>"; };
 		19A773D619EE127A00E4F684 /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
 		19A773D719EE127A00E4F684 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		19A773D919EE167500E4F684 /* Something Strange.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Something Strange.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			children = (
 				19A654FA19ED10FE0079BCC3 /* MVCPattern-Info.plist */,
 				19A654FB19ED10FE0079BCC3 /* InfoPlist.strings */,
+				19A773D919EE167500E4F684 /* Something Strange.ttf */,
 				19A654FE19ED10FE0079BCC3 /* main.m */,
 				19A6550019ED10FE0079BCC3 /* MVCPattern-Prefix.pch */,
 			);
@@ -265,6 +268,7 @@
 				19A654FD19ED10FE0079BCC3 /* InfoPlist.strings in Resources */,
 				19A6550519ED10FE0079BCC3 /* Images.xcassets in Resources */,
 				19A773D219EDFFAF00E4F684 /* DetailsViewController.xib in Resources */,
+				19A773DA19EE19F200E4F684 /* Something Strange.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

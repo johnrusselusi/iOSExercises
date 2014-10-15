@@ -24,6 +24,7 @@
   [super viewDidLoad];
   
   _classes = [[NSArray alloc]initWithObjects:@"Letters", @"Numbers", @"Colors", nil];
+  
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
