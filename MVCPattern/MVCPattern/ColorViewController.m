@@ -12,6 +12,23 @@
 
 @implementation ColorViewController
 
+- (instancetype)init{
+
+  self = [super initWithStyle:UITableViewStylePlain];
+  if (self) {
+    
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.title = @"ColorViewController";
+  }
+  
+  return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style{
+
+  return [self init];
+}
+
 - (void)viewDidLoad{
   
   [super viewDidLoad];

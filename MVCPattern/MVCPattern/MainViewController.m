@@ -19,6 +19,24 @@
 
 @implementation MainViewController
 
+- (instancetype)init{
+
+  self = [super initWithStyle:UITableViewStylePlain];
+  
+  if (self) {
+    
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.title = @"MVC";
+  }
+  
+  return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style{
+
+  return [self init];
+}
+
 - (void)viewDidLoad{
 
   [super viewDidLoad];

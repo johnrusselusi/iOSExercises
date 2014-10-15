@@ -12,6 +12,23 @@
 
 @implementation NumberViewController
 
+- (instancetype)init{
+  
+  self = [super initWithStyle:UITableViewStylePlain];
+  if (self) {
+    
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.title = @"NumberViewController";
+  }
+  
+  return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style{
+  
+  return [self init];
+}
+
 - (void)viewDidLoad{
   
   [super viewDidLoad];

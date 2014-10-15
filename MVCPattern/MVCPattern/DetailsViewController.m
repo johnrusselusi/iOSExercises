@@ -25,11 +25,14 @@
 @implementation DetailsViewController
 
 - (void)viewWillAppear:(BOOL)animated{
-
+  
+  UINavigationItem *navItem = self.navigationItem;
+  navItem.title = @"DetailsViewController";
+  
   self.itemTitle.font = [UIFont fontWithName:@"Something Strange" size:17.0];
   self.itemInformation.font = [UIFont fontWithName:@"Something Strange" size:17.0];
   self.itemType.font = [UIFont fontWithName:@"Something Strange" size:17.0];
-
+  
   [super viewWillAppear:animated];
   
   if ([[self.navigationController.viewControllers objectAtIndex:1] isKindOfClass:[LetterViewController class]])

@@ -19,6 +19,23 @@
 
 @implementation LetterViewController
 
+- (instancetype)init{
+  
+  self = [super initWithStyle:UITableViewStylePlain];
+  if (self) {
+    
+    UINavigationItem *navItem = self.navigationItem;
+    navItem.title = @"LetterViewController";
+  }
+  
+  return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style{
+  
+  return [self init];
+}
+
 - (void)viewDidLoad{
 
   [super viewDidLoad];
