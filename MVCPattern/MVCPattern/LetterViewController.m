@@ -8,7 +8,14 @@
 
 #import "LetterViewController.h"
 #import "DetailsViewController.h"
+#import "LetterViewCell.h"
 #import "Letter.h"
+
+@interface LetterViewController ()
+
+@property (nonatomic, strong)NSArray *thumbnails;
+
+@end
 
 @implementation LetterViewController
 
@@ -38,6 +45,8 @@
     
     [_letters addObject:letter];
   }
+  
+  self.thumbnails = [NSArray arrayWithObjects:@"A.png", @"B.png", @"C.png", nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -49,13 +58,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
   
-  UITableViewCell *cell =
-  [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
-                        reuseIdentifier:@"UITableViewCell"];
+  LetterViewCell *cell = (LetterViewCell *)[tableView dequeueReusableCellWithIdentifier:@"LetterViewCell"];
+  if (cell == nil) {
+    
+    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"LetterViewCell"
+                                                owner:self
+                                              options:nil];
+    cell = [nib objectAtIndex:0];
+  }
   
   Letter *letter = _letters[indexPath.row];
   
-  cell.textLabel.text = [letter description];
+  cell.itemName.text = letter.character;
+  cell.itemInformation.text = letter.information;
+  cell.itemType.text = [Letter description];
+  
+  cell.thumbnail.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
   
   return cell;
 }
@@ -69,5 +87,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   dvc.letter = selectedLetter;
   
   [self.navigationController pushViewController:dvc animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  return 78;
 }
 @end
