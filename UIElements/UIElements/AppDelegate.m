@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ImageViewController.h"
 #import "TableViewController.h"
 
 @implementation AppDelegate
@@ -17,11 +16,9 @@
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   // Override point for customization after application launch.
   
-  ImageViewController *pvc = [[ImageViewController alloc]init];
-  
   TableViewController *tableViewController = [[TableViewController alloc]init];
   UINavigationController *navigationController = [[UINavigationController alloc]
-                                                  initWithRootViewController:pvc];
+                                                  initWithRootViewController:tableViewController];
   
   self.window.rootViewController = navigationController;
   
