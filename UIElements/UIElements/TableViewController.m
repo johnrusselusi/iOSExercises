@@ -12,6 +12,7 @@
 #import "TextViewController.h"
 #import "PickerViewController.h"
 #import "ImageViewController.h"
+#import "SegmentedViewController.h"
 
 
 @interface TableViewController ()
@@ -36,6 +37,7 @@
                           [TextViewController description],
                           [PickerViewController description],
                           [ImageViewController description],
+                          [SegmentedViewController description],
                           nil];
   
 }
@@ -79,6 +81,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ImageViewController *ivc = [[ImageViewController alloc]init];
     ivc.title = @"UIImageView";
     [self.navigationController pushViewController:ivc animated:YES];
+  } else if (indexPath.row == 5) {
+  
+    SegmentedViewController *svc = [[SegmentedViewController alloc]init];
+    svc.title = @"UISegmentedControl";
+    [self.navigationController pushViewController:svc animated:YES];
   }
 }
 

@@ -30,6 +30,8 @@
 		19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490E119EFAA660000FC82 /* PickerViewController.xib */; };
 		19A490E719EFAFFD0000FC82 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A490E519EFAFFD0000FC82 /* ImageViewController.m */; };
 		19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490E619EFAFFD0000FC82 /* ImageViewController.xib */; };
+		19A490EC19EFB7D70000FC82 /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */; };
+		19A490ED19EFB7D70000FC82 /* SegmentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,9 @@
 		19A490E419EFAFFD0000FC82 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		19A490E519EFAFFD0000FC82 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		19A490E619EFAFFD0000FC82 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
+		19A490E919EFB7D70000FC82 /* SegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedViewController.h; sourceTree = "<group>"; };
+		19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedViewController.m; sourceTree = "<group>"; };
+		19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,9 @@
 				19A490E019EFAA660000FC82 /* PickerViewController.m */,
 				19A490E419EFAFFD0000FC82 /* ImageViewController.h */,
 				19A490E519EFAFFD0000FC82 /* ImageViewController.m */,
+				19A490E919EFB7D70000FC82 /* SegmentedViewController.h */,
+				19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */,
+				19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */,
 				19A490E619EFAFFD0000FC82 /* ImageViewController.xib */,
 				19A490E119EFAA660000FC82 /* PickerViewController.xib */,
 				19A490C919EF92240000FC82 /* ButtonViewController.m */,
@@ -236,6 +244,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Klab Cyscorpions Training Center";
 				TargetAttributes = {
+					19A4909519EF92000000FC82 = {
+						DevelopmentTeam = 59636WNZ2S;
+					};
 					19A490B019EF92000000FC82 = {
 						TestTargetID = 19A4909519EF92000000FC82;
 					};
@@ -271,6 +282,7 @@
 				19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */,
 				19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */,
 				19A490AC19EF92000000FC82 /* Images.xcassets in Resources */,
+				19A490ED19EFB7D70000FC82 /* SegmentedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +305,7 @@
 				19A490CB19EF92240000FC82 /* ButtonViewController.m in Sources */,
 				19A490E719EFAFFD0000FC82 /* ImageViewController.m in Sources */,
 				19A490A619EF92000000FC82 /* main.m in Sources */,
+				19A490EC19EFB7D70000FC82 /* SegmentedViewController.m in Sources */,
 				19A490DD19EF9FEF0000FC82 /* TextViewController.m in Sources */,
 				19A490CF19EF936B0000FC82 /* TableViewController.m in Sources */,
 				19A490E219EFAA660000FC82 /* PickerViewController.m in Sources */,
@@ -354,8 +367,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -373,6 +386,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8e8a61ed-aa19-4978-a026-5816066271ec";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -393,8 +407,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -405,6 +419,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "8e8a61ed-aa19-4978-a026-5816066271ec";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -415,10 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIElements/UIElements-Prefix.pch";
 				INFOPLIST_FILE = "UIElements/UIElements-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,10 +446,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIElements/UIElements-Prefix.pch";
 				INFOPLIST_FILE = "UIElements/UIElements-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
