@@ -13,6 +13,7 @@
 #import "PickerViewController.h"
 #import "ImageViewController.h"
 #import "SegmentedViewController.h"
+#import "ToolbarViewController.h"
 
 
 @interface TableViewController ()
@@ -38,6 +39,7 @@
                           [PickerViewController description],
                           [ImageViewController description],
                           [SegmentedViewController description],
+                          [ToolbarViewController description],
                           nil];
   
 }
@@ -86,6 +88,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     SegmentedViewController *svc = [[SegmentedViewController alloc]init];
     svc.title = @"UISegmentedControl";
     [self.navigationController pushViewController:svc animated:YES];
+  } else if (indexPath.row == 6) {
+  
+    ToolbarViewController *tvc = [[ToolbarViewController alloc]init];
+    tvc.title = @"UIToolbar";
+    [self.navigationController pushViewController:tvc animated:YES];
   }
 }
 

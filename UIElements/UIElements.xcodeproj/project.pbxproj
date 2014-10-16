@@ -32,6 +32,8 @@
 		19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490E619EFAFFD0000FC82 /* ImageViewController.xib */; };
 		19A490EC19EFB7D70000FC82 /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */; };
 		19A490ED19EFB7D70000FC82 /* SegmentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */; };
+		19BAF8FC19EFC4BB000469CF /* ToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */; };
+		19BAF8FD19EFC4BB000469CF /* ToolbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19BAF8FB19EFC4BB000469CF /* ToolbarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,9 @@
 		19A490E919EFB7D70000FC82 /* SegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedViewController.h; sourceTree = "<group>"; };
 		19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedViewController.m; sourceTree = "<group>"; };
 		19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedViewController.xib; sourceTree = "<group>"; };
+		19BAF8F919EFC4BB000469CF /* ToolbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolbarViewController.h; path = ../ToolbarViewController.h; sourceTree = "<group>"; };
+		19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolbarViewController.m; path = ../ToolbarViewController.m; sourceTree = "<group>"; };
+		19BAF8FB19EFC4BB000469CF /* ToolbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToolbarViewController.xib; path = ../ToolbarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +148,9 @@
 				19A490A819EF92000000FC82 /* AppDelegate.h */,
 				19A490A919EF92000000FC82 /* AppDelegate.m */,
 				19A490C819EF92240000FC82 /* ButtonViewController.h */,
+				19BAF8F919EFC4BB000469CF /* ToolbarViewController.h */,
+				19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */,
+				19BAF8FB19EFC4BB000469CF /* ToolbarViewController.xib */,
 				19A490D519EF9C9F0000FC82 /* ControlViewController.h */,
 				19A490D619EF9C9F0000FC82 /* ControlViewController.m */,
 				19A490DA19EF9FEF0000FC82 /* TextViewController.h */,
@@ -279,6 +287,7 @@
 				19A490DE19EF9FEF0000FC82 /* TextViewController.xib in Resources */,
 				19A490A419EF92000000FC82 /* InfoPlist.strings in Resources */,
 				19A490D919EF9CA00000FC82 /* ControlViewController.xib in Resources */,
+				19BAF8FD19EFC4BB000469CF /* ToolbarViewController.xib in Resources */,
 				19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */,
 				19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */,
 				19A490AC19EF92000000FC82 /* Images.xcassets in Resources */,
@@ -307,6 +316,7 @@
 				19A490A619EF92000000FC82 /* main.m in Sources */,
 				19A490EC19EFB7D70000FC82 /* SegmentedViewController.m in Sources */,
 				19A490DD19EF9FEF0000FC82 /* TextViewController.m in Sources */,
+				19BAF8FC19EFC4BB000469CF /* ToolbarViewController.m in Sources */,
 				19A490CF19EF936B0000FC82 /* TableViewController.m in Sources */,
 				19A490E219EFAA660000FC82 /* PickerViewController.m in Sources */,
 				19A490D819EF9CA00000FC82 /* ControlViewController.m in Sources */,
@@ -516,6 +526,7 @@
 				19A490C419EF92000000FC82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19A490C519EF92000000FC82 /* Build configuration list for PBXNativeTarget "UIElementsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +535,7 @@
 				19A490C719EF92000000FC82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
