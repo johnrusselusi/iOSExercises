@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>item8</key>
+	<dict>
+		<key>itemName</key>
+		<string>Hamburger</string>
+		<key>description</key>
+		<string>This is a hamburger</string>
+		<key>itemCategory</key>
+		<string>Food</string>
+	</dict>
+	<key>item7</key>
+	<dict>
+		<key>itemName</key>
+		<string>Mushroom Risotto</string>
+		<key>description</key>
+		<string>This is a Mushroom Risotto</string>
+		<key>itemCategory</key>
+		<string>Food</string>
+	</dict>
+	<key>item6</key>
+	<dict>
+		<key>itemName</key>
+		<string>Egg Benedict</string>
+		<key>description</key>
+		<string>This is an Egg Benedict</string>
+		<key>itemCategory</key>
+		<string>Food</string>
+	</dict>
+	<key>item5</key>
+	<dict>
+		<key>itemName</key>
+		<string>3</string>
+		<key>description</key>
+		<string>Third number</string>
+		<key>itemCategory</key>
+		<string>Number</string>
+	</dict>
+	<key>item4</key>
+	<dict>
+		<key>itemName</key>
+		<string>2</string>
+		<key>description</key>
+		<string>Second number</string>
+		<key>itemCategory</key>
+		<string>Number</string>
+	</dict>
+	<key>item3</key>
+	<dict>
+		<key>itemName</key>
+		<string>1</string>
+		<key>description</key>
+		<string>First number</string>
+		<key>itemCategory</key>
+		<string>Number</string>
+	</dict>
+	<key>item2</key>
+	<dict>
+		<key>itemName</key>
+		<string>C</string>
+		<key>description</key>
+		<string>Third letter of the alphabet</string>
+		<key>itemCategory</key>
+		<string>Letter</string>
+	</dict>
+	<key>item1</key>
+	<dict>
+		<key>itemName</key>
+		<string>B</string>
+		<key>description</key>
+		<string>Second letter of the alphabet</string>
+		<key>itemCategory</key>
+		<string>Letter</string>
+	</dict>
+	<key>item0</key>
+	<dict>
+		<key>itemName</key>
+		<string>A</string>
+		<key>description</key>
+		<string>First letter of the alphabet</string>
+		<key>itemCategory</key>
+		<string>Letter</string>
+	</dict>
+</dict>
+</plist>

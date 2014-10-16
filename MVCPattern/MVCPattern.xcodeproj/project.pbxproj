@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A48EF519EF5F390000FC82 /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A48EF419EF5F390000FC82 /* LevelViewController.m */; };
+		19A48EF819EF624F0000FC82 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A48EF719EF624F0000FC82 /* ItemModel.m */; };
 		19A654F319ED10FE0079BCC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A654F219ED10FE0079BCC3 /* Foundation.framework */; };
 		19A654F519ED10FE0079BCC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A654F419ED10FE0079BCC3 /* CoreGraphics.framework */; };
 		19A654F719ED10FE0079BCC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A654F619ED10FE0079BCC3 /* UIKit.framework */; };
@@ -19,6 +21,8 @@
 		19A6550E19ED10FE0079BCC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A654F619ED10FE0079BCC3 /* UIKit.framework */; };
 		19A6551619ED10FE0079BCC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A6551419ED10FE0079BCC3 /* InfoPlist.strings */; };
 		19A6551819ED10FE0079BCC3 /* MVCPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A6551719ED10FE0079BCC3 /* MVCPatternTests.m */; };
+		19CFB4AE19EE6C9D00788B34 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CFB4AD19EE6C9D00788B34 /* MainViewController.m */; };
+		19F3723819EE6982004FD321 /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F3723719EE6982004FD321 /* Items.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19A48EF319EF5F390000FC82 /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		19A48EF419EF5F390000FC82 /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
+		19A48EF619EF624F0000FC82 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		19A48EF719EF624F0000FC82 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
 		19A654EF19ED10FE0079BCC3 /* MVCPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A654F219ED10FE0079BCC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19A654F419ED10FE0079BCC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +56,9 @@
 		19A6551319ED10FE0079BCC3 /* MVCPatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVCPatternTests-Info.plist"; sourceTree = "<group>"; };
 		19A6551519ED10FE0079BCC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19A6551719ED10FE0079BCC3 /* MVCPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCPatternTests.m; sourceTree = "<group>"; };
+		19CFB4AC19EE6C9D00788B34 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		19CFB4AD19EE6C9D00788B34 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		19F3723719EE6982004FD321 /* Items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				19A6550119ED10FE0079BCC3 /* AppDelegate.h */,
+				19CFB4AC19EE6C9D00788B34 /* MainViewController.h */,
+				19CFB4AD19EE6C9D00788B34 /* MainViewController.m */,
+				19A48EF319EF5F390000FC82 /* LevelViewController.h */,
+				19A48EF419EF5F390000FC82 /* LevelViewController.m */,
+				19A48EF619EF624F0000FC82 /* ItemModel.h */,
+				19A48EF719EF624F0000FC82 /* ItemModel.m */,
 				19A6550219ED10FE0079BCC3 /* AppDelegate.m */,
 				19A6550419ED10FE0079BCC3 /* Images.xcassets */,
 				19A654F919ED10FE0079BCC3 /* Supporting Files */,
@@ -140,6 +157,7 @@
 			children = (
 				19A6551319ED10FE0079BCC3 /* MVCPatternTests-Info.plist */,
 				19A6551419ED10FE0079BCC3 /* InfoPlist.strings */,
+				19F3723719EE6982004FD321 /* Items.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A6551619ED10FE0079BCC3 /* InfoPlist.strings in Resources */,
+				19F3723819EE6982004FD321 /* Items.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A6550319ED10FE0079BCC3 /* AppDelegate.m in Sources */,
+				19A48EF819EF624F0000FC82 /* ItemModel.m in Sources */,
+				19CFB4AE19EE6C9D00788B34 /* MainViewController.m in Sources */,
 				19A654FF19ED10FE0079BCC3 /* main.m in Sources */,
+				19A48EF519EF5F390000FC82 /* LevelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +320,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,7 +359,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -437,6 +461,7 @@
 				19A6551D19ED10FE0079BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19A6551E19ED10FE0079BCC3 /* Build configuration list for PBXNativeTarget "MVCPatternTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +470,7 @@
 				19A6552019ED10FE0079BCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
