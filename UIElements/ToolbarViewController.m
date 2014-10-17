@@ -10,29 +10,28 @@
 
 @interface ToolbarViewController ()
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *playBarItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *ffwdBarItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *rewindBarItem;
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+
 @end
 
 @implementation ToolbarViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (IBAction)playPressed:(id)sender {
+  
+  self.textLabel.text = @"Play";
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (IBAction)ffwdPressed:(id)sender {
+  
+  self.textLabel.text = @"Fast Forward";
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)rewindPressed:(id)sender {
+  
+  self.textLabel.text = @"Rewind";
 }
-
 @end

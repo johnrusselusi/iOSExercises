@@ -6,6 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolbarViewController">
             <connections>
+                <outlet property="ffwdBarItem" destination="U00-an-C1v" id="uB4-wm-5MT"/>
+                <outlet property="playBarItem" destination="esY-Ka-SDL" id="94c-QX-spm"/>
+                <outlet property="rewindBarItem" destination="cJu-Tw-Uw9" id="Xsp-EV-bqY"/>
+                <outlet property="textLabel" destination="rIq-3Z-xoG" id="Kk0-eU-Ms1"/>
+                <outlet property="toolbar" destination="XIs-12-gdY" id="xWf-sf-nwi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,11 +23,31 @@
                     <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem systemItem="rewind" id="cJu-Tw-Uw9"/>
-                        <barButtonItem systemItem="play" id="esY-Ka-SDL"/>
-                        <barButtonItem systemItem="fastForward" id="U00-an-C1v"/>
+                        <barButtonItem systemItem="rewind" id="cJu-Tw-Uw9">
+                            <connections>
+                                <action selector="rewindPressed:" destination="-1" id="2cl-LN-hwh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="103" style="plain" systemItem="fixedSpace" id="BeV-a1-wVQ"/>
+                        <barButtonItem systemItem="play" id="esY-Ka-SDL">
+                            <connections>
+                                <action selector="playPressed:" destination="-1" id="tBU-1q-52U"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="104" style="plain" systemItem="fixedSpace" id="gdh-Lt-r5j"/>
+                        <barButtonItem systemItem="fastForward" id="U00-an-C1v">
+                            <connections>
+                                <action selector="ffwdPressed:" destination="-1" id="e8x-Iq-0sp"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press any bar button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-3Z-xoG">
+                    <rect key="frame" x="80" y="91" width="160" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
