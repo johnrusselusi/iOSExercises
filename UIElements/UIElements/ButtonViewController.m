@@ -19,6 +19,14 @@
 
 @implementation ButtonViewController
 
+- (instancetype)init{
+
+  self = [super init];
+  self.tabBarItem.title = @"Button";
+  
+  return self;
+}
+
 - (IBAction)customButtonPressed:(id)sender {
   
   self.textLabel.text = @"Custom Button Pressed";

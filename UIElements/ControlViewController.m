@@ -9,6 +9,7 @@
 #import "ControlViewController.h"
 
 @interface ControlViewController ()
+
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
 @property (weak, nonatomic) IBOutlet UISlider *mySlider;
@@ -16,6 +17,15 @@
 @end
 
 @implementation ControlViewController
+
+- (instancetype)init{
+
+  self = [super init];
+  
+  self.tabBarItem.title = @"Control";
+  
+  return self;
+}
 
 - (void)viewDidLoad{
 

@@ -14,6 +14,8 @@
 #import "ImageViewController.h"
 #import "SegmentedViewController.h"
 #import "ToolbarViewController.h"
+#import "TabBarViewController.h"
+#import "AlertViewController.h"
 
 
 @interface TableViewController ()
@@ -40,6 +42,8 @@
                           [ImageViewController description],
                           [SegmentedViewController description],
                           [ToolbarViewController description],
+                          [TabBarViewController description],
+                          [AlertViewController description],
                           nil];
   
 }
@@ -93,6 +97,16 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ToolbarViewController *tvc = [[ToolbarViewController alloc]init];
     tvc.title = @"UIToolbar";
     [self.navigationController pushViewController:tvc animated:YES];
+  } else if (indexPath.row == 7) {
+  
+    TabBarViewController *tvc = [[TabBarViewController alloc]init];
+    tvc.title = @"UITabBar";
+    [self.navigationController pushViewController:tvc animated:YES];
+  } else if (indexPath.row == 8) {
+  
+    AlertViewController *avc = [[AlertViewController alloc]init];
+    avc.title = @"Alert View Controller";
+    [self.navigationController pushViewController:avc animated:YES];
   }
 }
 
