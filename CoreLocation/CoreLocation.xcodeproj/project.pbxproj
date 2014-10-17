@@ -19,6 +19,8 @@
 		19A0A6B919F11F6000721D86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A0A6A119F11F6000721D86 /* UIKit.framework */; };
 		19A0A6C119F11F6000721D86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A6BF19F11F6000721D86 /* InfoPlist.strings */; };
 		19A0A6C319F11F6000721D86 /* CoreLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A6C219F11F6000721D86 /* CoreLocationTests.m */; };
+		19A0A6CF19F1208900721D86 /* LatitudeLongitudeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A6CD19F1208900721D86 /* LatitudeLongitudeViewController.m */; };
+		19A0A6D019F1208900721D86 /* LatitudeLongitudeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A6CE19F1208900721D86 /* LatitudeLongitudeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		19A0A6BE19F11F6000721D86 /* CoreLocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreLocationTests-Info.plist"; sourceTree = "<group>"; };
 		19A0A6C019F11F6000721D86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19A0A6C219F11F6000721D86 /* CoreLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreLocationTests.m; sourceTree = "<group>"; };
+		19A0A6CC19F1208900721D86 /* LatitudeLongitudeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatitudeLongitudeViewController.h; sourceTree = "<group>"; };
+		19A0A6CD19F1208900721D86 /* LatitudeLongitudeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatitudeLongitudeViewController.m; sourceTree = "<group>"; };
+		19A0A6CE19F1208900721D86 /* LatitudeLongitudeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LatitudeLongitudeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				19A0A6AC19F11F6000721D86 /* AppDelegate.h */,
+				19A0A6CC19F1208900721D86 /* LatitudeLongitudeViewController.h */,
+				19A0A6CD19F1208900721D86 /* LatitudeLongitudeViewController.m */,
+				19A0A6CE19F1208900721D86 /* LatitudeLongitudeViewController.xib */,
 				19A0A6AD19F11F6000721D86 /* AppDelegate.m */,
 				19A0A6AF19F11F6000721D86 /* Images.xcassets */,
 				19A0A6A419F11F6000721D86 /* Supporting Files */,
@@ -191,6 +199,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Klab Cyscorpions Training Center";
 				TargetAttributes = {
+					19A0A69919F11F6000721D86 = {
+						DevelopmentTeam = 59636WNZ2S;
+					};
 					19A0A6B419F11F6000721D86 = {
 						TestTargetID = 19A0A69919F11F6000721D86;
 					};
@@ -219,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0A6D019F1208900721D86 /* LatitudeLongitudeViewController.xib in Resources */,
 				19A0A6A819F11F6000721D86 /* InfoPlist.strings in Resources */,
 				19A0A6B019F11F6000721D86 /* Images.xcassets in Resources */,
 			);
@@ -239,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0A6CF19F1208900721D86 /* LatitudeLongitudeViewController.m in Sources */,
 				19A0A6AE19F11F6000721D86 /* AppDelegate.m in Sources */,
 				19A0A6AA19F11F6000721D86 /* main.m in Sources */,
 			);
@@ -298,7 +311,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,7 +350,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,10 +372,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreLocation/CoreLocation-Prefix.pch";
 				INFOPLIST_FILE = "CoreLocation/CoreLocation-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +388,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreLocation/CoreLocation-Prefix.pch";
 				INFOPLIST_FILE = "CoreLocation/CoreLocation-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
