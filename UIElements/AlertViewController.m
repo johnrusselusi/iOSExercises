@@ -19,11 +19,6 @@
 
 @implementation AlertViewController
 
-- (void)viewDidLoad{
-
-  
-}
-
 - (IBAction)buttonPressed:(id)sender {
   
   UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Modify Screen Brightness"

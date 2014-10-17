@@ -12,6 +12,7 @@
 		19A0A62F19F0B98500721D86 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A62D19F0B98500721D86 /* AlertViewController.xib */; };
 		19A0A63319F0C1CE00721D86 /* ActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A63119F0C1CE00721D86 /* ActionSheetViewController.m */; };
 		19A0A63419F0C1CE00721D86 /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */; };
+		19A0A63719F0CA8400721D86 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A63619F0CA8400721D86 /* ImageViewController.m */; };
 		19A4909A19EF92000000FC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909919EF92000000FC82 /* Foundation.framework */; };
 		19A4909C19EF92000000FC82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909B19EF92000000FC82 /* CoreGraphics.framework */; };
 		19A4909E19EF92000000FC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909D19EF92000000FC82 /* UIKit.framework */; };
@@ -33,8 +34,6 @@
 		19A490DE19EF9FEF0000FC82 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490DC19EF9FEF0000FC82 /* TextViewController.xib */; };
 		19A490E219EFAA660000FC82 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A490E019EFAA660000FC82 /* PickerViewController.m */; };
 		19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490E119EFAA660000FC82 /* PickerViewController.xib */; };
-		19A490E719EFAFFD0000FC82 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A490E519EFAFFD0000FC82 /* ImageViewController.m */; };
-		19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490E619EFAFFD0000FC82 /* ImageViewController.xib */; };
 		19A490EC19EFB7D70000FC82 /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */; };
 		19A490ED19EFB7D70000FC82 /* SegmentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */; };
 		19BAF8FC19EFC4BB000469CF /* ToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */; };
@@ -60,6 +59,8 @@
 		19A0A63019F0C1CE00721D86 /* ActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetViewController.h; sourceTree = "<group>"; };
 		19A0A63119F0C1CE00721D86 /* ActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetViewController.m; sourceTree = "<group>"; };
 		19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
+		19A0A63519F0CA8400721D86 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
+		19A0A63619F0CA8400721D86 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
 		19A4909619EF92000000FC82 /* UIElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A4909919EF92000000FC82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19A4909B19EF92000000FC82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,9 +91,6 @@
 		19A490DF19EFAA660000FC82 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		19A490E019EFAA660000FC82 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		19A490E119EFAA660000FC82 /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
-		19A490E419EFAFFD0000FC82 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
-		19A490E519EFAFFD0000FC82 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		19A490E619EFAFFD0000FC82 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 		19A490E919EFB7D70000FC82 /* SegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedViewController.h; sourceTree = "<group>"; };
 		19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedViewController.m; sourceTree = "<group>"; };
 		19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedViewController.xib; sourceTree = "<group>"; };
@@ -161,6 +159,8 @@
 				19A490A819EF92000000FC82 /* AppDelegate.h */,
 				19A490A919EF92000000FC82 /* AppDelegate.m */,
 				19A490C819EF92240000FC82 /* ButtonViewController.h */,
+				19A0A63519F0CA8400721D86 /* ImageViewController.h */,
+				19A0A63619F0CA8400721D86 /* ImageViewController.m */,
 				19BAF8F919EFC4BB000469CF /* ToolbarViewController.h */,
 				19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */,
 				19A0A62B19F0B98500721D86 /* AlertViewController.h */,
@@ -180,12 +180,9 @@
 				19A0A62119F0A50800721D86 /* TabBarViewController.h */,
 				19A0A62219F0A50800721D86 /* TabBarViewController.m */,
 				19A490E019EFAA660000FC82 /* PickerViewController.m */,
-				19A490E419EFAFFD0000FC82 /* ImageViewController.h */,
-				19A490E519EFAFFD0000FC82 /* ImageViewController.m */,
 				19A490E919EFB7D70000FC82 /* SegmentedViewController.h */,
 				19A490EA19EFB7D70000FC82 /* SegmentedViewController.m */,
 				19A490EB19EFB7D70000FC82 /* SegmentedViewController.xib */,
-				19A490E619EFAFFD0000FC82 /* ImageViewController.xib */,
 				19A490E119EFAA660000FC82 /* PickerViewController.xib */,
 				19A490C919EF92240000FC82 /* ButtonViewController.m */,
 				19A490CD19EF936B0000FC82 /* TableViewController.h */,
@@ -310,7 +307,6 @@
 				19A490D919EF9CA00000FC82 /* ControlViewController.xib in Resources */,
 				19A0A63419F0C1CE00721D86 /* ActionSheetViewController.xib in Resources */,
 				19BAF8FD19EFC4BB000469CF /* ToolbarViewController.xib in Resources */,
-				19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */,
 				19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */,
 				19A490AC19EF92000000FC82 /* Images.xcassets in Resources */,
 				19A490ED19EFB7D70000FC82 /* SegmentedViewController.xib in Resources */,
@@ -336,9 +332,9 @@
 				19A0A63319F0C1CE00721D86 /* ActionSheetViewController.m in Sources */,
 				19A490AA19EF92000000FC82 /* AppDelegate.m in Sources */,
 				19A490CB19EF92240000FC82 /* ButtonViewController.m in Sources */,
-				19A490E719EFAFFD0000FC82 /* ImageViewController.m in Sources */,
 				19A490A619EF92000000FC82 /* main.m in Sources */,
 				19A490EC19EFB7D70000FC82 /* SegmentedViewController.m in Sources */,
+				19A0A63719F0CA8400721D86 /* ImageViewController.m in Sources */,
 				19A490DD19EF9FEF0000FC82 /* TextViewController.m in Sources */,
 				19BAF8FC19EFC4BB000469CF /* ToolbarViewController.m in Sources */,
 				19A0A62419F0A50800721D86 /* TabBarViewController.m in Sources */,
