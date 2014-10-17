@@ -16,13 +16,34 @@
   [super viewDidLoad];
   self.title = self.category;
   
+  [self.tableView registerClass:[UITableViewCell class]
+         forCellReuseIdentifier:@"UITableViewCell"];
+
   NSString *filePath = [[NSBundle mainBundle]pathForResource:@"Items" ofType:@"plist"];
-  NSMutableArray *array = [NSArray arrayWithContentsOfFile:filePath];
+  NSDictionary *dict = [[NSDictionary alloc]initWithContentsOfFile:filePath];
+  NSArray *array = [NSArray arrayWithArray:[dict objectForKey:@"itemCategory"]];
   
-  for (NSString *str in array) {
+  NSArray *filteredArray = [array filteredArrayUsingPredicate:
+                            [NSPredicate predicateWithFormat:@"itemCategory == %@", self.category]];
+  
+  for (int i = 0; i < [filteredArray count]; i++) {
     
-    NSLog(@"--%@", str);
+    NSDictionary *d = [filteredArray objectAtIndex:i];
+    ItemModel *item = [[ItemModel alloc]initWithDictionary:d];
+    [self.items addObject:item];
   }
+  NSLog(@"%@", dict);
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+  UITableViewCell *cell =
+  [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"
+                                  forIndexPath:indexPath];
+  NSDictionary *cellIdentifier = [self.items objectAtIndex:indexPath.row];
+  cell.textLabel.text = [NSString stringWithFormat:@"%@",[cellIdentifier objectForKey:@"itemTitle"]];
+  return cell;
 }
 
 - (instancetype)init{
