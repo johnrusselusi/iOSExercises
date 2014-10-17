@@ -10,6 +10,8 @@
 		19A0A62419F0A50800721D86 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A62219F0A50800721D86 /* TabBarViewController.m */; };
 		19A0A62E19F0B98500721D86 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A62C19F0B98500721D86 /* AlertViewController.m */; };
 		19A0A62F19F0B98500721D86 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A62D19F0B98500721D86 /* AlertViewController.xib */; };
+		19A0A63319F0C1CE00721D86 /* ActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A63119F0C1CE00721D86 /* ActionSheetViewController.m */; };
+		19A0A63419F0C1CE00721D86 /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */; };
 		19A4909A19EF92000000FC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909919EF92000000FC82 /* Foundation.framework */; };
 		19A4909C19EF92000000FC82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909B19EF92000000FC82 /* CoreGraphics.framework */; };
 		19A4909E19EF92000000FC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909D19EF92000000FC82 /* UIKit.framework */; };
@@ -55,6 +57,9 @@
 		19A0A62B19F0B98500721D86 /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertViewController.h; path = ../AlertViewController.h; sourceTree = "<group>"; };
 		19A0A62C19F0B98500721D86 /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertViewController.m; path = ../AlertViewController.m; sourceTree = "<group>"; };
 		19A0A62D19F0B98500721D86 /* AlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertViewController.xib; path = ../AlertViewController.xib; sourceTree = "<group>"; };
+		19A0A63019F0C1CE00721D86 /* ActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetViewController.h; sourceTree = "<group>"; };
+		19A0A63119F0C1CE00721D86 /* ActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetViewController.m; sourceTree = "<group>"; };
+		19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
 		19A4909619EF92000000FC82 /* UIElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A4909919EF92000000FC82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19A4909B19EF92000000FC82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +165,9 @@
 				19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */,
 				19A0A62B19F0B98500721D86 /* AlertViewController.h */,
 				19A0A62C19F0B98500721D86 /* AlertViewController.m */,
+				19A0A63019F0C1CE00721D86 /* ActionSheetViewController.h */,
+				19A0A63119F0C1CE00721D86 /* ActionSheetViewController.m */,
+				19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */,
 				19A0A62D19F0B98500721D86 /* AlertViewController.xib */,
 				19BAF8FB19EFC4BB000469CF /* ToolbarViewController.xib */,
 				19A490D519EF9C9F0000FC82 /* ControlViewController.h */,
@@ -300,6 +308,7 @@
 				19A490DE19EF9FEF0000FC82 /* TextViewController.xib in Resources */,
 				19A490A419EF92000000FC82 /* InfoPlist.strings in Resources */,
 				19A490D919EF9CA00000FC82 /* ControlViewController.xib in Resources */,
+				19A0A63419F0C1CE00721D86 /* ActionSheetViewController.xib in Resources */,
 				19BAF8FD19EFC4BB000469CF /* ToolbarViewController.xib in Resources */,
 				19A490E819EFAFFD0000FC82 /* ImageViewController.xib in Resources */,
 				19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */,
@@ -324,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0A63319F0C1CE00721D86 /* ActionSheetViewController.m in Sources */,
 				19A490AA19EF92000000FC82 /* AppDelegate.m in Sources */,
 				19A490CB19EF92240000FC82 /* ButtonViewController.m in Sources */,
 				19A490E719EFAFFD0000FC82 /* ImageViewController.m in Sources */,

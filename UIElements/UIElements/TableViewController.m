@@ -16,6 +16,7 @@
 #import "ToolbarViewController.h"
 #import "TabBarViewController.h"
 #import "AlertViewController.h"
+#import "ActionSheetViewController.h"
 
 
 @interface TableViewController ()
@@ -44,6 +45,7 @@
                           [ToolbarViewController description],
                           [TabBarViewController description],
                           [AlertViewController description],
+                          [ActionSheetViewController description],
                           nil];
   
 }
@@ -106,6 +108,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   
     AlertViewController *avc = [[AlertViewController alloc]init];
     avc.title = @"Alert View Controller";
+    [self.navigationController pushViewController:avc animated:YES];
+  } else if (indexPath.row == 9) {
+  
+    ActionSheetViewController *avc = [[ActionSheetViewController alloc]init];
+    avc.title = @"UIActionSheet";
     [self.navigationController pushViewController:avc animated:YES];
   }
 }
