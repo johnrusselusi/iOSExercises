@@ -18,22 +18,20 @@
 @implementation WebViewController
 
 - (void)viewDidLoad{
-
-  [super viewDidLoad];
   
-  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://zomato.com"]
+  [super viewDidLoad];
+  void (^loadRequest)(void) = ^{
+  NSURL *url = [NSURL URLWithString:@"http://zomato.com"];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                          cachePolicy:NSURLCacheStorageNotAllowed
                                                      timeoutInterval:20.0];
-  request.HTTPMethod = @"POST";
-  [request setValue:@"application/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-  
-  NSString *stringData = @"some data";
-  NSData *requestBodyData = [stringData dataUsingEncoding:NSUTF8StringEncoding];
-  request.HTTPBody = requestBodyData;
-  
-  [self.webView loadRequest:request];
   
   __unused NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    
+  [self.webView loadRequest:request];
+  };
+  
+  loadRequest();
 }
 
 - (void)connection:(NSURLConnection *)connection
