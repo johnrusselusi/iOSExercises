@@ -19,6 +19,10 @@
 		19A0A66119F0ECF900721D86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A0A64919F0ECF900721D86 /* UIKit.framework */; };
 		19A0A66919F0ECF900721D86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A66719F0ECF900721D86 /* InfoPlist.strings */; };
 		19A0A66B19F0ECF900721D86 /* CustomDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A66A19F0ECF900721D86 /* CustomDelegateTests.m */; };
+		19A0A67A19F0EE6C00721D86 /* PauseScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A67819F0EE6C00721D86 /* PauseScreenViewController.m */; };
+		19A0A67B19F0EE6C00721D86 /* PauseScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A67919F0EE6C00721D86 /* PauseScreenViewController.xib */; };
+		19A0A68219F0F35400721D86 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A68019F0F35400721D86 /* GameViewController.m */; };
+		19A0A68319F0F35400721D86 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A68119F0F35400721D86 /* GameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		19A0A66619F0ECF900721D86 /* CustomDelegateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomDelegateTests-Info.plist"; sourceTree = "<group>"; };
 		19A0A66819F0ECF900721D86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19A0A66A19F0ECF900721D86 /* CustomDelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomDelegateTests.m; sourceTree = "<group>"; };
+		19A0A67719F0EE6C00721D86 /* PauseScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseScreenViewController.h; path = ../PauseScreenViewController.h; sourceTree = "<group>"; };
+		19A0A67819F0EE6C00721D86 /* PauseScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseScreenViewController.m; path = ../PauseScreenViewController.m; sourceTree = "<group>"; };
+		19A0A67919F0EE6C00721D86 /* PauseScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PauseScreenViewController.xib; path = ../PauseScreenViewController.xib; sourceTree = "<group>"; };
+		19A0A67F19F0F35400721D86 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		19A0A68019F0F35400721D86 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ../GameViewController.m; sourceTree = "<group>"; };
+		19A0A68119F0F35400721D86 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameViewController.xib; path = ../GameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				19A0A65419F0ECF900721D86 /* AppDelegate.h */,
+				19A0A67719F0EE6C00721D86 /* PauseScreenViewController.h */,
+				19A0A67F19F0F35400721D86 /* GameViewController.h */,
+				19A0A68019F0F35400721D86 /* GameViewController.m */,
+				19A0A68119F0F35400721D86 /* GameViewController.xib */,
+				19A0A67819F0EE6C00721D86 /* PauseScreenViewController.m */,
+				19A0A67919F0EE6C00721D86 /* PauseScreenViewController.xib */,
 				19A0A65519F0ECF900721D86 /* AppDelegate.m */,
 				19A0A65719F0ECF900721D86 /* Images.xcassets */,
 				19A0A64C19F0ECF900721D86 /* Supporting Files */,
@@ -191,6 +207,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Klab Cyscorpions Training Center";
 				TargetAttributes = {
+					19A0A64119F0ECF900721D86 = {
+						DevelopmentTeam = 59636WNZ2S;
+					};
 					19A0A65C19F0ECF900721D86 = {
 						TestTargetID = 19A0A64119F0ECF900721D86;
 					};
@@ -219,8 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0A68319F0F35400721D86 /* GameViewController.xib in Resources */,
 				19A0A65019F0ECF900721D86 /* InfoPlist.strings in Resources */,
 				19A0A65819F0ECF900721D86 /* Images.xcassets in Resources */,
+				19A0A67B19F0EE6C00721D86 /* PauseScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0A68219F0F35400721D86 /* GameViewController.m in Sources */,
+				19A0A67A19F0EE6C00721D86 /* PauseScreenViewController.m in Sources */,
 				19A0A65619F0ECF900721D86 /* AppDelegate.m in Sources */,
 				19A0A65219F0ECF900721D86 /* main.m in Sources */,
 			);
@@ -298,7 +321,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,7 +360,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taro Noguchi (5299G93T6Z)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,10 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomDelegate/CustomDelegate-Prefix.pch";
 				INFOPLIST_FILE = "CustomDelegate/CustomDelegate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +398,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomDelegate/CustomDelegate-Prefix.pch";
 				INFOPLIST_FILE = "CustomDelegate/CustomDelegate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
