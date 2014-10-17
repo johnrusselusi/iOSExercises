@@ -17,7 +17,7 @@
 #import "TabBarViewController.h"
 #import "AlertViewController.h"
 #import "ActionSheetViewController.h"
-
+#import "WebViewController.h"
 
 @interface TableViewController ()
 
@@ -46,6 +46,7 @@
                           [TabBarViewController description],
                           [AlertViewController description],
                           [ActionSheetViewController description],
+                          [WebViewController description],
                           nil];
   
 }
@@ -114,6 +115,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ActionSheetViewController *avc = [[ActionSheetViewController alloc]init];
     avc.title = @"UIActionSheet";
     [self.navigationController pushViewController:avc animated:YES];
+  } else if (indexPath.row == 10) {
+  
+    WebViewController *wvc = [[WebViewController alloc]init];
+    wvc.title = @"UIWebView";
+    [self.navigationController pushViewController:wvc animated:YES];
   }
 }
 

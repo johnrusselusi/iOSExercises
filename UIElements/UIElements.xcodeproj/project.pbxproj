@@ -13,6 +13,8 @@
 		19A0A63319F0C1CE00721D86 /* ActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A63119F0C1CE00721D86 /* ActionSheetViewController.m */; };
 		19A0A63419F0C1CE00721D86 /* ActionSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */; };
 		19A0A63719F0CA8400721D86 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A63619F0CA8400721D86 /* ImageViewController.m */; };
+		19A0A68F19F0FEEC00721D86 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0A68D19F0FEEC00721D86 /* WebViewController.m */; };
+		19A0A69019F0FEEC00721D86 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A0A68E19F0FEEC00721D86 /* WebViewController.xib */; };
 		19A4909A19EF92000000FC82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909919EF92000000FC82 /* Foundation.framework */; };
 		19A4909C19EF92000000FC82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909B19EF92000000FC82 /* CoreGraphics.framework */; };
 		19A4909E19EF92000000FC82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A4909D19EF92000000FC82 /* UIKit.framework */; };
@@ -61,6 +63,9 @@
 		19A0A63219F0C1CE00721D86 /* ActionSheetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionSheetViewController.xib; sourceTree = "<group>"; };
 		19A0A63519F0CA8400721D86 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
 		19A0A63619F0CA8400721D86 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
+		19A0A68C19F0FEEC00721D86 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = ../WebViewController.h; sourceTree = "<group>"; };
+		19A0A68D19F0FEEC00721D86 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = ../WebViewController.m; sourceTree = "<group>"; };
+		19A0A68E19F0FEEC00721D86 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = ../WebViewController.xib; sourceTree = "<group>"; };
 		19A4909619EF92000000FC82 /* UIElements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIElements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A4909919EF92000000FC82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		19A4909B19EF92000000FC82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,6 +168,9 @@
 				19A0A63619F0CA8400721D86 /* ImageViewController.m */,
 				19BAF8F919EFC4BB000469CF /* ToolbarViewController.h */,
 				19BAF8FA19EFC4BB000469CF /* ToolbarViewController.m */,
+				19A0A68C19F0FEEC00721D86 /* WebViewController.h */,
+				19A0A68D19F0FEEC00721D86 /* WebViewController.m */,
+				19A0A68E19F0FEEC00721D86 /* WebViewController.xib */,
 				19A0A62B19F0B98500721D86 /* AlertViewController.h */,
 				19A0A62C19F0B98500721D86 /* AlertViewController.m */,
 				19A0A63019F0C1CE00721D86 /* ActionSheetViewController.h */,
@@ -309,6 +317,7 @@
 				19BAF8FD19EFC4BB000469CF /* ToolbarViewController.xib in Resources */,
 				19A490E319EFAA660000FC82 /* PickerViewController.xib in Resources */,
 				19A490AC19EF92000000FC82 /* Images.xcassets in Resources */,
+				19A0A69019F0FEEC00721D86 /* WebViewController.xib in Resources */,
 				19A490ED19EFB7D70000FC82 /* SegmentedViewController.xib in Resources */,
 				19A0A62F19F0B98500721D86 /* AlertViewController.xib in Resources */,
 			);
@@ -330,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A0A63319F0C1CE00721D86 /* ActionSheetViewController.m in Sources */,
+				19A0A68F19F0FEEC00721D86 /* WebViewController.m in Sources */,
 				19A490AA19EF92000000FC82 /* AppDelegate.m in Sources */,
 				19A490CB19EF92240000FC82 /* ButtonViewController.m in Sources */,
 				19A490A619EF92000000FC82 /* main.m in Sources */,
