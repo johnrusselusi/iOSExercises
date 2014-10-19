@@ -25,6 +25,7 @@
   [self.categories addObject:[NSDictionary dictionaryWithObject:@"Letter" forKey:@"Title"]];
   [self.categories addObject:[NSDictionary dictionaryWithObject:@"Number" forKey:@"Title"]];
   [self.categories addObject:[NSDictionary dictionaryWithObject:@"Food" forKey:@"Title"]];
+  
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView

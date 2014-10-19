@@ -16,8 +16,8 @@
   
   if (self) {
     
-    self.itemTitle = [dict objectForKey:@"itemTitle"];
-    self.itemInfo = [dict objectForKey:@"itemInfo"];
+    self.itemName = [dict objectForKey:@"itemName"];
+    self.itemInfo = [dict objectForKey:@"description"];
     self.itemCategory = [dict objectForKey:@"itemCategory"];
   }
   return self;

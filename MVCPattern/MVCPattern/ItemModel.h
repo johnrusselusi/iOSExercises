@@ -10,9 +10,9 @@
 
 @interface ItemModel : NSObject
 
-@property (nonatomic, strong) NSArray *itemTitle;
-@property (nonatomic, strong) NSArray *itemInfo;
-@property (nonatomic, strong) NSArray *itemCategory;
+@property (nonatomic, strong) NSString *itemName;
+@property (nonatomic, strong) NSString *itemInfo;
+@property (nonatomic, strong) NSString *itemCategory;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 
