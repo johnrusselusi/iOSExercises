@@ -10,6 +10,6 @@
 
 @interface MainViewController : UITableViewController
 
-@property (nonatomic, strong) NSMutableArray *categories;
+@property (nonatomic, retain) NSMutableArray *categories;
 
 @end

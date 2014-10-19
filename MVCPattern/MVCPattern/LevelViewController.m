@@ -12,15 +12,15 @@
 
 @interface LevelViewController ()
 
-@property (nonatomic, strong) NSString *filePath;
-@property (nonatomic, strong) NSArray *itemsArray;
-@property (nonatomic, strong) NSArray *filteredArray;
+@property (nonatomic, retain) NSString *filePath;
+@property (nonatomic, retain) NSArray *itemsArray;
+@property (nonatomic, retain) NSArray *filteredArray;
 
-@property (nonatomic, strong) NSDictionary *itemsDictionary;
-@property (nonatomic, strong) NSMutableArray *levelArray;
-@property (nonatomic, strong) NSMutableArray *arrayOfItemModel;
+@property (nonatomic, retain) NSDictionary *itemsDictionary;
+@property (nonatomic, retain) NSMutableArray *levelArray;
+@property (nonatomic, retain) NSMutableArray *arrayOfItemModel;
 
-@property (nonatomic, strong) NSString *itemTitleForCell;
+@property (nonatomic, retain) NSString *itemTitleForCell;
 
 @end
 
@@ -39,8 +39,10 @@
   
   self.filePath = [[NSBundle mainBundle]pathForResource:@"Items" ofType:@"plist"];
   self.itemsArray = [[NSArray alloc]initWithContentsOfFile:self.filePath];
+  
   self.filteredArray = [self.itemsArray filteredArrayUsingPredicate:
                             [NSPredicate predicateWithFormat:@"itemCategory == %@", self.category]];
+  
   
   for (int i = 0; i < [self.filteredArray count]; i++) {
     
@@ -49,9 +51,14 @@
     ItemModel *item = [[ItemModel alloc]initWithDictionary:self.itemsDictionary];
     [self.arrayOfItemModel addObject:item];
     
+    [item release];
+    
     [self.levelArray addObject:self.itemsDictionary];
   }
+  
+  [self.filteredArray release];
   NSLog(@"%@", self.arrayOfItemModel);
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -75,6 +82,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   dvc.item = [self.arrayOfItemModel objectAtIndex:indexPath.row];
   
   [self.navigationController pushViewController:dvc animated:YES];
+  
+  [dvc release];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -93,5 +102,4 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
   return [self init];
 }
-
 @end

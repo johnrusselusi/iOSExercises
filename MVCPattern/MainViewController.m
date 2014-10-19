@@ -20,7 +20,7 @@
   [self.tableView registerClass:[UITableViewCell class]
          forCellReuseIdentifier:@"UITableViewCell"];
   
-  self.categories = [[NSMutableArray alloc]init];
+  self.categories = [[[NSMutableArray alloc]init] autorelease];
   
   [self.categories addObject:[NSDictionary dictionaryWithObject:@"Letter" forKey:@"Title"]];
   [self.categories addObject:[NSDictionary dictionaryWithObject:@"Number" forKey:@"Title"]];
@@ -49,6 +49,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
   lvc.category = [NSString stringWithFormat:@"%@", [levelViewTitle objectForKey:@"Title"]];
   
   [self.navigationController pushViewController:lvc animated:YES];
+  
+  [lvc release];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView

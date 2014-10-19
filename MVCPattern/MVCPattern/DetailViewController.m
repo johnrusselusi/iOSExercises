@@ -11,9 +11,9 @@
 
 @interface DetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *itemName;
-@property (weak, nonatomic) IBOutlet UILabel *itemDescription;
-@property (weak, nonatomic) IBOutlet UILabel *itemCategory;
+@property (nonatomic, retain) IBOutlet UILabel *itemName;
+@property (nonatomic, retain) IBOutlet UILabel *itemDescription;
+@property (nonatomic, retain) IBOutlet UILabel *itemCategory;
 
 @end
 

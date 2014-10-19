@@ -20,9 +20,14 @@
   
   UINavigationController *navigationController = [[UINavigationController alloc]
                                                   initWithRootViewController:mainViewController];
+  [mainViewController release];
+  
   self.window.rootViewController = navigationController;
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
+
+    [navigationController release];
+  
   return YES;
 }
 

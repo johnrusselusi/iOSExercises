@@ -10,7 +10,7 @@
 
 @interface LevelViewController : UITableViewController
 
-@property (nonatomic, strong) NSString *category;
-@property (nonatomic, strong) NSMutableArray *items;
+@property (nonatomic, retain) NSString *category;
+@property (nonatomic, retain) NSMutableArray *items;
 
 @end
