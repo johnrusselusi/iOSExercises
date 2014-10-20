@@ -12,8 +12,8 @@ static NSString *const URL_STRING = @"http://zomato.com";
 
 @interface WebViewController () <NSURLConnectionDelegate>
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property (nonatomic, strong) NSMutableData *responseData;
+@property (retain, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) NSMutableData *responseData;
 
 @end
 

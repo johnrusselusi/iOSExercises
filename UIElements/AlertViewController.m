@@ -16,7 +16,7 @@ static float const DIM = 0.0;
 
 @interface AlertViewController () <UIAlertViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (retain, nonatomic) IBOutlet UIButton *button;
 
 @end
 

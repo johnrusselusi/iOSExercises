@@ -14,11 +14,11 @@ static NSString *const REWIND_LABEL = @"Rewind";
 
 @interface ToolbarViewController ()
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *playBarItem;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *ffwdBarItem;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *rewindBarItem;
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *playBarItem;
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *ffwdBarItem;
+@property (retain, nonatomic) IBOutlet UIBarButtonItem *rewindBarItem;
+@property (retain, nonatomic) IBOutlet UILabel *textLabel;
+@property (retain, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
 

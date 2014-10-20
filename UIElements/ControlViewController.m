@@ -13,10 +13,10 @@ static int const DIM = 0.0;
 
 @interface ControlViewController ()
 
-@property (weak, nonatomic) IBOutlet UISwitch *brightnessSwitch;
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UISlider *brightnessSlider;
-@property (weak, nonatomic) IBOutlet UILabel *sliderValue;
+@property (retain, nonatomic) IBOutlet UISwitch *brightnessSwitch;
+@property (retain, nonatomic) IBOutlet UILabel *textLabel;
+@property (retain, nonatomic) IBOutlet UISlider *brightnessSlider;
+@property (retain, nonatomic) IBOutlet UILabel *sliderValue;
 
 @end
 

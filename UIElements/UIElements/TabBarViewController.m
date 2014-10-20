@@ -24,7 +24,9 @@
     ControlViewController *cvc = [[ControlViewController alloc]init];
   
     self.viewControllers = @[bvc, cvc];
-  
+    
+    [bvc release];
+    [cvc release];
 }
 
 @end

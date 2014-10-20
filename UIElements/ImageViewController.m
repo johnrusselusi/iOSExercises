@@ -17,8 +17,8 @@ static int const THUMBNAIL_HEIGHT = 120;
 
 @interface ImageViewController ()
 
-@property (nonatomic, strong) UIImage *originalImage;
-@property (strong, nonatomic) UIImage *thumbnail;
+@property (nonatomic, retain) UIImage *originalImage;
+@property (nonatomic, retain) UIImage *thumbnail;
 
 @end
 
@@ -33,29 +33,39 @@ static int const THUMBNAIL_HEIGHT = 120;
   
     UIGraphicsBeginImageContext(thumbnailSize);
     [self.originalImage drawInRect:CGRectMake(IMAGE_X_AXIS, IMAGE_Y_AXIS, THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT)];
-    UIImageView *imageView = [[UIImageView alloc]
+    UIImageView *imageView = [[[UIImageView alloc]
                             initWithFrame:CGRectMake(0, 80, THUMBNAIL_WIDTH,
-                                                     THUMBNAIL_HEIGHT)];
+                                                     THUMBNAIL_HEIGHT)] autorelease];
     [imageView setImage:UIGraphicsGetImageFromCurrentImageContext()];
     UIGraphicsEndImageContext();
-  
-    [self.view addSubview:imageView];
-  
     [imageView setUserInteractionEnabled:YES];
-  
+    
     UIGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self
-                                                                              action:@selector(viewFullImageSize:)];
+                                                                                action:@selector(viewFullImageSize:)];
     [imageView addGestureRecognizer:tapRecognizer];
+    
+    [self.view addSubview:imageView];
+    
 }
 
 - (void)viewFullImageSize:(UIGestureRecognizer *)gr{
 
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(IMAGE_X_AXIS,
+    UIImageView *imageView = [[[UIImageView alloc]initWithFrame:CGRectMake(IMAGE_X_AXIS,
                                                                           IMAGE_Y_AXIS,
                                                                           FULL_IMAGE_WIDTH,
-                                                                          FULL_IMAGE_HEIGHT)];
+                                                                          FULL_IMAGE_HEIGHT)] autorelease];
     [imageView setImage:self.originalImage];
     [self.view addSubview:imageView];
+}
+
+- (void)dealloc{
+
+    [_originalImage release];
+    _originalImage = nil;
+    
+    [_thumbnail release];
+    _thumbnail = nil;
+    [super dealloc];
 }
 
 @end

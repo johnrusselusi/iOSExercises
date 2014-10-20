@@ -10,9 +10,9 @@
 
 @interface ButtonViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UIButton *standardButton;
-@property (weak, nonatomic) IBOutlet UIButton *customButton;
+@property (retain, nonatomic) IBOutlet UILabel *textLabel;
+@property (retain, nonatomic) IBOutlet UIButton *standardButton;
+@property (retain, nonatomic) IBOutlet UIButton *customButton;
 
 
 @end

@@ -10,7 +10,7 @@
 
 @interface SegmentedViewController ()
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (retain, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
 

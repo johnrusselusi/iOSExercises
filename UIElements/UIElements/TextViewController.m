@@ -10,9 +10,9 @@
 
 @interface TextViewController () <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (retain, nonatomic) IBOutlet UILabel *textLabel;
+@property (retain, nonatomic) IBOutlet UITextField *textField;
+@property (retain, nonatomic) IBOutlet UITextView *textView;
 
 @end
 

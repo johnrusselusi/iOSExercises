@@ -69,57 +69,57 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     if (indexPath.row == 0) {
     
-        ButtonViewController *bvc = [[ButtonViewController alloc]init];
+        ButtonViewController *bvc = [[[ButtonViewController alloc]init] autorelease];
         bvc.title = [UIButton description];
         [self.navigationController pushViewController:bvc animated:YES];
         } else if (indexPath.row == 1) {
   
-        ControlViewController *cvc = [[ControlViewController alloc]init];
+        ControlViewController *cvc = [[[ControlViewController alloc]init] autorelease];
         cvc.title = [UIControl description];
         [self.navigationController pushViewController:cvc animated:YES];
         } else if (indexPath.row == 2) {
   
-        TextViewController *tvc = [[TextViewController alloc]init];
+        TextViewController *tvc = [[[TextViewController alloc]init] autorelease];
         tvc.title = [UITextView description];
         [self.navigationController pushViewController:tvc animated:YES];
         } else if (indexPath.row == 3) {
   
-        PickerViewController *pvc = [[PickerViewController alloc]init];
+        PickerViewController *pvc = [[[PickerViewController alloc]init] autorelease];
         pvc.title = [UIPickerView description];
         [self.navigationController pushViewController:pvc animated:YES];
         } else if (indexPath.row == 4) {
       
-        ImageViewController *ivc = [[ImageViewController alloc]init];
+        ImageViewController *ivc = [[[ImageViewController alloc]init]autorelease];
         ivc.title = [UIImageView description];
         [self.navigationController pushViewController:ivc animated:YES];
         } else if (indexPath.row == 5) {
       
-        SegmentedViewController *svc = [[SegmentedViewController alloc]init];
+        SegmentedViewController *svc = [[[SegmentedViewController alloc]init]autorelease];
         svc.title = [UISegmentedControl description];
         [self.navigationController pushViewController:svc animated:YES];
         } else if (indexPath.row == 6) {
       
-        ToolbarViewController *tvc = [[ToolbarViewController alloc]init];
+        ToolbarViewController *tvc = [[[ToolbarViewController alloc]init]autorelease];
         tvc.title = [UIToolbar description];
         [self.navigationController pushViewController:tvc animated:YES];
         } else if (indexPath.row == 7) {
       
-        TabBarViewController *tvc = [[TabBarViewController alloc]init];
+        TabBarViewController *tvc = [[[TabBarViewController alloc]init]autorelease];
         tvc.title = [UITabBar description];
         [self.navigationController pushViewController:tvc animated:YES];
         } else if (indexPath.row == 8) {
       
-        AlertViewController *avc = [[AlertViewController alloc]init];
+        AlertViewController *avc = [[[AlertViewController alloc]init]autorelease];
         avc.title = [UIAlertView description];
         [self.navigationController pushViewController:avc animated:YES];
         } else if (indexPath.row == 9) {
       
-        ActionSheetViewController *avc = [[ActionSheetViewController alloc]init];
+        ActionSheetViewController *avc = [[[ActionSheetViewController alloc]init]autorelease];
         avc.title = [UIActionSheet description];
         [self.navigationController pushViewController:avc animated:YES];
         } else if (indexPath.row == 10) {
       
-        WebViewController *wvc = [[WebViewController alloc]init];
+        WebViewController *wvc = [[[WebViewController alloc]init]autorelease];
         wvc.title = [UIWebView description];
         [self.navigationController pushViewController:wvc animated:YES];
       }

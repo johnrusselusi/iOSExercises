@@ -11,8 +11,8 @@
 @interface PickerViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic, strong) NSArray *pickerData;
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (retain, nonatomic) IBOutlet UILabel *textLabel;
+@property (retain, nonatomic) IBOutlet UIPickerView *picker;
 
 @end
 

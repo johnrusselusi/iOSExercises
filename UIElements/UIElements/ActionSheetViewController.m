@@ -10,8 +10,8 @@
 
 @interface ActionSheetViewController () <UIActionSheetDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (retain, nonatomic) IBOutlet UIButton *button;
+@property (retain, nonatomic) IBOutlet UILabel *textLabel;
 
 @end
 
