@@ -19,6 +19,8 @@
 		19F3715319EE423E004FD321 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F3713B19EE423E004FD321 /* UIKit.framework */; };
 		19F3715B19EE423E004FD321 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19F3715919EE423E004FD321 /* InfoPlist.strings */; };
 		19F3715D19EE423E004FD321 /* CoreMotionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F3715C19EE423E004FD321 /* CoreMotionTests.m */; };
+		19F3716919EE42D7004FD321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F3716719EE42D7004FD321 /* ViewController.m */; };
+		19F3716A19EE42D7004FD321 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F3716819EE42D7004FD321 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		19F3715819EE423E004FD321 /* CoreMotionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreMotionTests-Info.plist"; sourceTree = "<group>"; };
 		19F3715A19EE423E004FD321 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		19F3715C19EE423E004FD321 /* CoreMotionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMotionTests.m; sourceTree = "<group>"; };
+		19F3716619EE42D7004FD321 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19F3716719EE42D7004FD321 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19F3716819EE42D7004FD321 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				19F3714619EE423E004FD321 /* AppDelegate.h */,
+				19F3716619EE42D7004FD321 /* ViewController.h */,
+				19F3716719EE42D7004FD321 /* ViewController.m */,
+				19F3716819EE42D7004FD321 /* ViewController.xib */,
 				19F3714719EE423E004FD321 /* AppDelegate.m */,
 				19F3714919EE423E004FD321 /* Images.xcassets */,
 				19F3713E19EE423E004FD321 /* Supporting Files */,
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F3714219EE423E004FD321 /* InfoPlist.strings in Resources */,
+				19F3716A19EE42D7004FD321 /* ViewController.xib in Resources */,
 				19F3714A19EE423E004FD321 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F3716919EE42D7004FD321 /* ViewController.m in Sources */,
 				19F3714819EE423E004FD321 /* AppDelegate.m in Sources */,
 				19F3714419EE423E004FD321 /* main.m in Sources */,
 			);
@@ -298,7 +308,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -336,7 +347,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CYSCORPIONS INC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CYSCORPIONS INC";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
