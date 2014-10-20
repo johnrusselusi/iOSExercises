@@ -15,10 +15,13 @@
 @implementation ViewController
 
 - (void)viewDidLoad{
-
+  
   [super viewDidLoad];
+  
+  NSString *audioFileName = @"minion_laugh";
+  
   NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                       pathForResource:@"minion_laugh"
+                                       pathForResource:audioFileName
                                        ofType:@"aifc"]];
   
   NSError *error;
