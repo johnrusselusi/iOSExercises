@@ -30,12 +30,12 @@
 
   [super viewDidLoad];
   
-  self.title = self.category;
-  self.levelArray = [[NSMutableArray alloc]init];
-  self.arrayOfItemModel = [[NSMutableArray alloc]init];
-  
   [self.tableView registerClass:[UITableViewCell class]
          forCellReuseIdentifier:@"UITableViewCell"];
+  
+  self.title = self.category;
+  self.levelArray = [[NSMutableArray alloc]init];
+  self.arrayOfItemModel = [[[NSMutableArray alloc]init] autorelease];
   
   self.filePath = [[NSBundle mainBundle]pathForResource:@"Items" ofType:@"plist"];
   self.itemsArray = [[NSArray alloc]initWithContentsOfFile:self.filePath];
@@ -48,7 +48,7 @@
     
     self.itemsDictionary = [self.filteredArray objectAtIndex:i];
     
-    ItemModel *item = [[ItemModel alloc]initWithDictionary:self.itemsDictionary];
+    ItemModel *item = [[[ItemModel alloc]initWithDictionary:self.itemsDictionary] autorelease];
     [self.arrayOfItemModel addObject:item];
     
     [item release];
@@ -56,7 +56,6 @@
     [self.levelArray addObject:self.itemsDictionary];
   }
   
-  [self.filteredArray release];
   NSLog(@"%@", self.arrayOfItemModel);
 
 }
