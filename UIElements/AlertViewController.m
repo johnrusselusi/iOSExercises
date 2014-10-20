@@ -8,6 +8,8 @@
 
 #define bright 1.0
 #define dim 0.0
+#define brightButton "Bright"
+#define dimButton "Dim"
 
 #import "AlertViewController.h"
 
@@ -20,30 +22,28 @@
 @implementation AlertViewController
 
 - (IBAction)buttonPressed:(id)sender {
-  
-  UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Modify Screen Brightness"
+    
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Modify Screen Brightness"
                                                      message:@"Choose an option"
                                                     delegate:nil
                                            cancelButtonTitle:@"Cancel"
-                                           otherButtonTitles:@"Bright", @"Dim", nil];
-  alertView.delegate = self;
+                                           otherButtonTitles:@brightButton, @dimButton, nil];
+    alertView.delegate = self;
   
-  [alertView show];
+    [alertView show];
 }
 
 - (void)alertView:(UIAlertView *)alertView
 clickedButtonAtIndex:(NSInteger)buttonIndex{
   
+    NSString *buttonClicked = [alertView buttonTitleAtIndex:buttonIndex];
   
-  
-  NSString *buttonClicked = [alertView buttonTitleAtIndex:buttonIndex];
-  
-  if ([buttonClicked isEqualToString:@"Bright"]) {
+    if ([buttonClicked isEqualToString:@brightButton]) {
     
-    [UIScreen mainScreen].brightness = bright;
-  } else if ([buttonClicked isEqualToString:@"Dim"]) {
+        [UIScreen mainScreen].brightness = bright;
+    } else if ([buttonClicked isEqualToString:@dimButton]) {
   
-    [UIScreen mainScreen].brightness = dim;
-  }
+        [UIScreen mainScreen].brightness = dim;
+    }
 }
 @end

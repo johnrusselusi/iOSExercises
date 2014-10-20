@@ -18,12 +18,12 @@
 
 - (void)viewDidLoad{
 
-  [super viewDidLoad];
+    [super viewDidLoad];
   
-  ButtonViewController *bvc = [[ButtonViewController alloc]init];
-  ControlViewController *cvc = [[ControlViewController alloc]init];
+    ButtonViewController *bvc = [[ButtonViewController alloc]init];
+    ControlViewController *cvc = [[ControlViewController alloc]init];
   
-  self.viewControllers = @[bvc, cvc];
+    self.viewControllers = @[bvc, cvc];
   
 }
 

@@ -21,20 +21,20 @@
 
 - (instancetype)init{
 
-  self = [super init];
-  self.tabBarItem.title = @"Button";
+    self = [super init];
+    self.tabBarItem.title = @"Button";
   
-  return self;
+    return self;
 }
 
 - (IBAction)customButtonPressed:(id)sender {
   
-  self.textLabel.text = @"Custom Button Pressed";
+    self.textLabel.text = @"Custom Button Pressed";
 }
 
 - (IBAction)standardButtonPressed:(id)sender {
   
-  self.textLabel.text = @"Standard Button Pressed";
+    self.textLabel.text = @"Standard Button Pressed";
 }
 
 @end

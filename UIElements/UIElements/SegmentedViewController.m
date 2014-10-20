@@ -18,16 +18,16 @@
 @implementation SegmentedViewController
 - (IBAction)segmentedControlClicked:(id)sender {
   
-  if (self.segmentedControl.selectedSegmentIndex == 0) {
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
     
-    self.view.backgroundColor = [UIColor redColor];
-  } else if (self.segmentedControl.selectedSegmentIndex == 1) {
+        self.view.backgroundColor = [UIColor redColor];
+    } else if (self.segmentedControl.selectedSegmentIndex == 1) {
   
-    self.view.backgroundColor = [UIColor greenColor];
-  } else if (self.segmentedControl.selectedSegmentIndex == 2){
+        self.view.backgroundColor = [UIColor greenColor];
+    } else if (self.segmentedControl.selectedSegmentIndex == 2){
   
-    self.view.backgroundColor = [UIColor blueColor];
-  }
+        self.view.backgroundColor = [UIColor blueColor];
+    }
 }
 
 @end

@@ -22,16 +22,16 @@
 
 - (IBAction)playPressed:(id)sender {
   
-  self.textLabel.text = @"Play";
+    self.textLabel.text = @"Play";
 }
 
 - (IBAction)ffwdPressed:(id)sender {
   
-  self.textLabel.text = @"Fast Forward";
+    self.textLabel.text = @"Fast Forward";
 }
 
 - (IBAction)rewindPressed:(id)sender {
   
-  self.textLabel.text = @"Rewind";
+    self.textLabel.text = @"Rewind";
 }
 @end

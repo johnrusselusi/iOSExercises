@@ -23,33 +23,33 @@
 
 - (void)viewDidLoad{
 
-  [super viewDidLoad];
+    [super viewDidLoad];
   
-  self.originalImage = [UIImage imageNamed:@"1"];
-  CGSize thumbnailSize = CGSizeMake(thumbanailWidth, thumbnailHeight);
+    self.originalImage = [UIImage imageNamed:@"1"];
+    CGSize thumbnailSize = CGSizeMake(thumbanailWidth, thumbnailHeight);
   
-  UIGraphicsBeginImageContext(thumbnailSize);
-  [self.originalImage drawInRect:CGRectMake(xAxis, yAxis, thumbnailSize.width, thumbnailSize.height)];
-  UIImageView *imageView = [[UIImageView alloc]
+    UIGraphicsBeginImageContext(thumbnailSize);
+    [self.originalImage drawInRect:CGRectMake(xAxis, yAxis, thumbnailSize.width, thumbnailSize.height)];
+    UIImageView *imageView = [[UIImageView alloc]
                             initWithFrame:CGRectMake(0, 80, thumbnailSize.width,
                                                      thumbnailSize.height)];
-  [imageView setImage:UIGraphicsGetImageFromCurrentImageContext()];
-  UIGraphicsEndImageContext();
+    [imageView setImage:UIGraphicsGetImageFromCurrentImageContext()];
+    UIGraphicsEndImageContext();
   
-  [self.view addSubview:imageView];
+    [self.view addSubview:imageView];
   
-  [imageView setUserInteractionEnabled:YES];
+    [imageView setUserInteractionEnabled:YES];
   
-  UIGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self
+    UIGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self
                                                                               action:@selector(viewFullImageSize:)];
-  [imageView addGestureRecognizer:tapRecognizer];
+    [imageView addGestureRecognizer:tapRecognizer];
 }
 
 - (void)viewFullImageSize:(UIGestureRecognizer *)gr{
 
-  UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 80, 320, 400)];
-  [imageView setImage:self.originalImage];
-  [self.view addSubview:imageView];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 80, 320, 400)];
+    [imageView setImage:self.originalImage];
+    [self.view addSubview:imageView];
 }
 
 @end

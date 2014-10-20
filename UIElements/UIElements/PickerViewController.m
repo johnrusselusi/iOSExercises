@@ -20,38 +20,38 @@
 
 - (void)viewDidLoad{
 
-  [super viewDidLoad];
+    [super viewDidLoad];
   
-  self.pickerData = [NSArray arrayWithObjects:@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", nil];
+    self.pickerData = [NSArray arrayWithObjects:@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", nil];
   
-  self.picker.dataSource = self;
-  self.picker.delegate = self;
+    self.picker.dataSource = self;
+    self.picker.delegate = self;
   
 }
 
 - (int)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component{
 
-  return [self.pickerData count];
+    return [self.pickerData count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component{
 
-  return self.pickerData[row];
+    return self.pickerData[row];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component{
 
-  self.textLabel.text = self.pickerData[row];
+    self.textLabel.text = self.pickerData[row];
 }
 
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
 
-  return 1;
+    return 1;
 }
 
 @end

@@ -20,21 +20,21 @@
 
 - (void)viewDidLoad{
 
-  [super viewDidLoad];
+    [super viewDidLoad];
   
-  self.textField.placeholder = @"Enter a text here.";
-  self.textField.returnKeyType = UIReturnKeyDone;
-  self.textField.delegate = self;
+    self.textField.placeholder = @"Enter a text here.";
+    self.textField.returnKeyType = UIReturnKeyDone;
+    self.textField.delegate = self;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
   
-  NSString *textViewCurrentText = self.textView.text;
+    NSString *textViewCurrentText = self.textView.text;
   
-  self.textView.text = textField.text;
-  [textField resignFirstResponder];
-  [self.textView setText:[NSString stringWithFormat:@"%@ %@", textViewCurrentText, textField.text]];
-  return YES;
+    self.textView.text = textField.text;
+    [textField resignFirstResponder];
+    [self.textView setText:[NSString stringWithFormat:@"%@ %@", textViewCurrentText, textField.text]];
+    return YES;
 }
 
 @end

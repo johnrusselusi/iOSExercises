@@ -19,21 +19,20 @@
 
 - (IBAction)buttonPressed:(id)sender {
   
-  UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil
                                                           delegate:self
                                                  cancelButtonTitle:@"Cancel"
                                             destructiveButtonTitle:@"Delete"
                                                  otherButtonTitles:@"Save", nil];
   
-  actionSheet.delegate = self;
+    actionSheet.delegate = self;
   
-  [actionSheet showInView:self.view];
+    [actionSheet showInView:self.view];
 }
 
-- (void)actionSheet:(UIActionSheet *)actionSheet
-clickedButtonAtIndex:(NSInteger)buttonIndex{
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
 
-  self.textLabel.text = [NSString stringWithFormat:@"%@", [actionSheet buttonTitleAtIndex:buttonIndex]];
+    self.textLabel.text = [NSString stringWithFormat:@"%@", [actionSheet buttonTitleAtIndex:buttonIndex]];
 }
 
 @end

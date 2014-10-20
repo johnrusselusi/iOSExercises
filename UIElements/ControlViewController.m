@@ -12,9 +12,9 @@
 
 @interface ControlViewController ()
 
-@property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *brightnessSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (weak, nonatomic) IBOutlet UISlider *mySlider;
+@property (weak, nonatomic) IBOutlet UISlider *brightnessSlider;
 @property (weak, nonatomic) IBOutlet UILabel *sliderValue;
 
 @end
@@ -23,44 +23,44 @@
 
 - (instancetype)init{
 
-  self = [super init];
-  self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.mySlider value]];
-  self.tabBarItem.title = @"Control";
+    self = [super init];
+    self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.brightnessSlider value]];
+    self.tabBarItem.title = @"Control";
   
-  return self;
+    return self;
 }
 
 - (void)viewDidLoad{
   
-  self.mySlider.value = [UIScreen mainScreen].brightness;
+    self.brightnessSlider.value = [UIScreen mainScreen].brightness;
 }
 
 - (IBAction)switchTicked:(id)sender {
   
-  if (self.mySwitch.on) {
+    if (self.brightnessSwitch.on) {
     
-    [self.textLabel setHidden:TRUE];
-    [UIScreen mainScreen].brightness = bright;
-    self.mySlider.value = bright;
-  } else {
+        [self.textLabel setHidden:TRUE];
+        [UIScreen mainScreen].brightness = bright;
+        self.brightnessSlider.value = bright;
+    } else {
     
-    [self.textLabel setHidden:FALSE];
-    [UIScreen mainScreen].brightness = dim;
-    self.mySlider.value = dim;
-  }
+        [self.textLabel setHidden:FALSE];
+        [UIScreen mainScreen].brightness = dim;
+        self.brightnessSlider.value = dim;
+    }
   
-  self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.mySlider value]];
+    self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.brightnessSlider value]];
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
   
-  [UIScreen mainScreen].brightness = [self.mySlider value];
+    [UIScreen mainScreen].brightness = [self.brightnessSlider value];
   
-  self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.mySlider value]];
+    self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.brightnessSlider value]];
   
-  if (self.mySlider.value == dim) {
+    if (self.brightnessSlider.value == dim) {
     
-    [self.mySwitch setOn:FALSE animated:YES];
-  }
+        [self.brightnessSwitch setOn:FALSE animated:YES];
+    }
 }
 @end

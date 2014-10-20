@@ -6,8 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ControlViewController">
             <connections>
-                <outlet property="mySlider" destination="JqH-Lh-eQ7" id="Df8-nx-FGs"/>
-                <outlet property="mySwitch" destination="UQz-c7-rJK" id="1jH-Ep-a0J"/>
+                <outlet property="brightnessSlider" destination="JqH-Lh-eQ7" id="l4H-SR-y6F"/>
+                <outlet property="brightnessSwitch" destination="UQz-c7-rJK" id="OdX-Wt-Pg9"/>
                 <outlet property="sliderValue" destination="tEh-Zx-Xi2" id="bmH-6e-AjL"/>
                 <outlet property="textLabel" destination="UsN-f3-OFZ" id="FoG-0X-5ZE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

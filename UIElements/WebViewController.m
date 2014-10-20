@@ -19,35 +19,35 @@
 
 - (void)viewDidLoad{
   
-  NSString *urlString = @"http://zomato.com";
+    NSString *urlString = @"http://zomato.com";
   
-  [super viewDidLoad];
-  void (^loadRequest)(void) = ^{
-  NSURL *url = [NSURL URLWithString:urlString];
-  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    [super viewDidLoad];
+    void (^loadRequest)(void) = ^{
+        NSURL *url = [NSURL URLWithString:urlString];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                          cachePolicy:NSURLCacheStorageNotAllowed
                                                      timeoutInterval:20.0];
   
-  __unused NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        __unused NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
-  [self.webView loadRequest:request];
-  };
+        [self.webView loadRequest:request];
+    };
   
-  loadRequest();
+    loadRequest();
 }
 
 - (void)connection:(NSURLConnection *)connection
-  didFailWithError:(NSError *)error{
+    didFailWithError:(NSError *)error{
 
-  connection = nil;
+    connection = nil;
   
-  UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Connection Error"
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Connection Error"
                                                      message:[NSString stringWithFormat:@"%@", [error localizedDescription]]
                                                     delegate:nil
                                            cancelButtonTitle:@"OK"
                                            otherButtonTitles:nil];
   
-  [alertView show];
+    [alertView show];
 }
 
 @end
