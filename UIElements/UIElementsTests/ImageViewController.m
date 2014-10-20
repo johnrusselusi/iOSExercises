@@ -7,14 +7,11 @@
 //
 
 #import "ImageViewController.h"
-#define xAxis 0
-#define yAxis 0
-#define thumbanailWidth 120
-#define thumbnailHeight 120
 
 @interface ImageViewController ()
 
 @property (nonatomic, strong) UIImage *originalImage;
+
 @property (strong, nonatomic) UIImage *thumbnail;
 
 @end
@@ -26,10 +23,10 @@
   [super viewDidLoad];
   
   self.originalImage = [UIImage imageNamed:@"1"];
-  CGSize thumbnailSize = CGSizeMake(thumbanailWidth, thumbnailHeight);
+  CGSize thumbnailSize = CGSizeMake(120, 120);
   
   UIGraphicsBeginImageContext(thumbnailSize);
-  [self.originalImage drawInRect:CGRectMake(xAxis, yAxis, thumbnailSize.width, thumbnailSize.height)];
+  [self.originalImage drawInRect:CGRectMake(0, 0, thumbnailSize.width, thumbnailSize.height)];
   UIImageView *imageView = [[UIImageView alloc]
                             initWithFrame:CGRectMake(0, 80, thumbnailSize.width,
                                                      thumbnailSize.height)];

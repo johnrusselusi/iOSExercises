@@ -19,11 +19,9 @@
 
 - (void)viewDidLoad{
   
-  NSString *urlString = @"http://zomato.com";
-  
   [super viewDidLoad];
   void (^loadRequest)(void) = ^{
-  NSURL *url = [NSURL URLWithString:urlString];
+  NSURL *url = [NSURL URLWithString:@"http://zomato.com"];
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                          cachePolicy:NSURLCacheStorageNotAllowed
                                                      timeoutInterval:20.0];

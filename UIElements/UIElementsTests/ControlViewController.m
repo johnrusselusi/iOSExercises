@@ -7,8 +7,6 @@
 //
 
 #import "ControlViewController.h"
-#define bright 1.0
-#define dim 0.0
 
 @interface ControlViewController ()
 
@@ -40,13 +38,13 @@
   if (self.mySwitch.on) {
     
     [self.textLabel setHidden:TRUE];
-    [UIScreen mainScreen].brightness = bright;
-    self.mySlider.value = bright;
+    [UIScreen mainScreen].brightness = 1;
+    self.mySlider.value = 1;
   } else {
     
     [self.textLabel setHidden:FALSE];
-    [UIScreen mainScreen].brightness = dim;
-    self.mySlider.value = dim;
+    [UIScreen mainScreen].brightness = 0.0;
+    self.mySlider.value = 0.0;
   }
   
   self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.mySlider value]];
@@ -58,7 +56,7 @@
   
   self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.mySlider value]];
   
-  if (self.mySlider.value == dim) {
+  if (self.mySlider.value == 0.0) {
     
     [self.mySwitch setOn:FALSE animated:YES];
   }

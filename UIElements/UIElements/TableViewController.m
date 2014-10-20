@@ -31,10 +31,12 @@
 
   [super viewDidLoad];
   
+  NSString *cellReuseIdentifier = @"UITableViewCell";
+  
   self.title = @"Main View Controller";
   
   [self.tableView registerClass:[UITableViewCell class]
-         forCellReuseIdentifier:@"UITableViewCell"];
+         forCellReuseIdentifier:cellReuseIdentifier];
   
   self.viewControllers = [NSArray arrayWithObjects:[ButtonViewController description],
                           [ControlViewController description],
@@ -54,7 +56,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"
+  NSString *cellReuseIdentifier = @"UITableViewCell";
+  
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifier
                                                           forIndexPath:indexPath];
   
   cell.textLabel.text = self.viewControllers[indexPath.row];
