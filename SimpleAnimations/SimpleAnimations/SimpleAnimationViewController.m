@@ -7,6 +7,11 @@
 //
 
 #import "SimpleAnimationViewController.h"
+#define animationFrameXAxis 60
+#define animationFrameYAxis 95
+#define animationFrameWidth 86
+#define animationFrameHeight 193
+#define animationTime 0.5
 
 @interface SimpleAnimationViewController ()
 
@@ -23,12 +28,15 @@
 - (void)viewDidLoad{
   [super viewDidLoad];
   
+  NSString *image1Name = @"1.png";
+  NSString *image2Name = @"2.png";
+  
   UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc]initWithTarget:self
                                                                                    action:@selector(openBasket:)];
   
   [self.view addGestureRecognizer:singleFingerTap];
   
-  NSArray *imageNames = @[@"1.png", @"2.png"];
+  NSArray *imageNames = @[image1Name, image2Name];
   
   NSMutableArray *images = [[NSMutableArray alloc] init];
   for (int i = 0; i < imageNames.count; i++) {
@@ -36,9 +44,13 @@
   }
   
   //UIImageView *animationImageView = [[UIImageView alloc] initWithFrame:CGRectMake(60, 95, 86, 193)];
-  _animatedImage.frame = CGRectMake(60, 95, 86, 193);
+  _animatedImage.frame = CGRectMake(animationFrameXAxis,
+                                    animationFrameYAxis,
+                                    animationFrameWidth,
+                                    animationFrameHeight);
+  
   _animatedImage.animationImages = images;
-  _animatedImage.animationDuration = 0.5;
+  _animatedImage.animationDuration = animationTime;
   
   [_animatedImage startAnimating];
   
