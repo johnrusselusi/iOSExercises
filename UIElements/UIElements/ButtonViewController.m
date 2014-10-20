@@ -37,4 +37,18 @@
     self.textLabel.text = @"Standard Button Pressed";
 }
 
+- (void)dealloc{
+
+    [_textLabel release];
+    _textLabel = nil;
+    
+    [_standardButton release];
+    _standardButton = nil;
+    
+    [_customButton release];
+    _customButton = nil;
+    
+    [super dealloc];
+}
+
 @end

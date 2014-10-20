@@ -6,9 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolbarViewController">
             <connections>
-                <outlet property="ffwdBarItem" destination="U00-an-C1v" id="uB4-wm-5MT"/>
-                <outlet property="playBarItem" destination="esY-Ka-SDL" id="94c-QX-spm"/>
-                <outlet property="rewindBarItem" destination="cJu-Tw-Uw9" id="Xsp-EV-bqY"/>
                 <outlet property="textLabel" destination="rIq-3Z-xoG" id="Kk0-eU-Ms1"/>
                 <outlet property="toolbar" destination="XIs-12-gdY" id="xWf-sf-nwi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

@@ -64,4 +64,21 @@ static int const DIM = 0.0;
         [self.brightnessSwitch setOn:FALSE animated:YES];
     }
 }
+
+- (void)dealloc{
+
+    [_brightnessSlider release];
+    _brightnessSlider = nil;
+    
+    [_brightnessSwitch release];
+    _brightnessSwitch = nil;
+    
+    [_textLabel release];
+    _textLabel = nil;
+    
+    [_sliderValue release];
+    _sliderValue = nil;
+    
+    [super dealloc];
+}
 @end

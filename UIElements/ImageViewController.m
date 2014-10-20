@@ -44,6 +44,8 @@ static int const THUMBNAIL_HEIGHT = 120;
                                                                                 action:@selector(viewFullImageSize:)];
     [imageView addGestureRecognizer:tapRecognizer];
     
+    [tapRecognizer release];
+    
     [self.view addSubview:imageView];
     
 }

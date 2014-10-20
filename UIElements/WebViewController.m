@@ -13,7 +13,6 @@ static NSString *const URL_STRING = @"http://zomato.com";
 @interface WebViewController () <NSURLConnectionDelegate>
 
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
-@property (nonatomic, retain) NSMutableData *responseData;
 
 @end
 
@@ -27,9 +26,10 @@ static NSString *const URL_STRING = @"http://zomato.com";
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                          cachePolicy:NSURLCacheStorageNotAllowed
                                                      timeoutInterval:20.0];
-  
-        __unused NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    
+        
+        
+        __unused NSURLConnection *conn = [[[NSURLConnection alloc] initWithRequest:request delegate:self] autorelease];
+        
         [self.webView loadRequest:request];
     };
   
@@ -48,6 +48,15 @@ static NSString *const URL_STRING = @"http://zomato.com";
                                            otherButtonTitles:nil];
   
     [alertView show];
+    [alertView release];
+}
+
+- (void)dealloc{
+
+    [_webView release];
+    _webView = nil;
+    
+    [super dealloc];
 }
 
 @end

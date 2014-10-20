@@ -10,7 +10,7 @@
 
 @interface PickerViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (nonatomic, strong) NSArray *pickerData;
+@property (retain, nonatomic) NSArray *pickerData;
 @property (retain, nonatomic) IBOutlet UILabel *textLabel;
 @property (retain, nonatomic) IBOutlet UIPickerView *picker;
 
@@ -52,6 +52,20 @@ numberOfRowsInComponent:(NSInteger)component{
 - (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
 
     return 1;
+}
+
+- (void)dealloc{
+
+    [_pickerData release];
+    _pickerData = nil;
+    
+    [_textLabel release];
+    _textLabel = nil;
+    
+    [_picker release];
+    _picker = nil;
+    
+    [super dealloc];
 }
 
 @end

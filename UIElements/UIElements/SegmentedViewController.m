@@ -29,4 +29,12 @@
     }
 }
 
+- (void)dealloc{
+
+    [_segmentedControl release];
+    _segmentedControl = nil;
+    
+    [super dealloc];
+}
+
 @end

@@ -23,7 +23,7 @@ static NSString *const CELL_REUSE_IDENTIFIER = @"UITableViewCell";
 
 @interface TableViewController ()
 
-@property (nonatomic, strong) NSArray *viewControllers;
+@property (retain, nonatomic) NSArray *viewControllers;
 
 @end
 
@@ -140,6 +140,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 - (instancetype)initWithStyle:(UITableViewStyle)style{
 
     return [self init];
+}
+
+- (void)dealloc{
+
+    [_viewControllers release];
+    _viewControllers = nil;
+    
+    [super dealloc];
 }
 
 @end

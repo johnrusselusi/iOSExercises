@@ -37,4 +37,18 @@
     return YES;
 }
 
+- (void)dealloc{
+
+    [_textLabel release];
+    _textLabel = nil;
+    
+    [_textField release];
+    _textField = nil;
+    
+    [_textView release];
+    _textView = nil;
+    
+    [super dealloc];
+}
+
 @end

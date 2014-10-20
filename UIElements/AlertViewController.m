@@ -47,4 +47,13 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
         [UIScreen mainScreen].brightness = DIM;
     }
 }
+
+- (void)dealloc{
+
+    [_button release];
+    _button = nil;
+    
+    [super dealloc];
+}
+
 @end

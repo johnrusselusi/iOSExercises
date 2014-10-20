@@ -35,4 +35,15 @@
     self.textLabel.text = [NSString stringWithFormat:@"%@", [actionSheet buttonTitleAtIndex:buttonIndex]];
 }
 
+- (void)dealloc{
+    
+    [_button release];
+    _button = nil;
+    
+    [_textLabel release];
+    _textLabel = nil;
+    
+    [super dealloc];
+}
+
 @end
