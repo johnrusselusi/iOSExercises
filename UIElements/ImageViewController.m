@@ -7,10 +7,13 @@
 //
 
 #import "ImageViewController.h"
-#define xAxis 0
-#define yAxis 0
-#define thumbanailWidth 120
-#define thumbnailHeight 120
+
+static int const IMAGE_X_AXIS = 0;
+static int const IMAGE_Y_AXIS = 0;
+static int const FULL_IMAGE_WIDTH = 320;
+static int const FULL_IMAGE_HEIGHT = 480;
+static int const THUMBNAIL_WIDTH = 120;
+static int const THUMBNAIL_HEIGHT = 120;
 
 @interface ImageViewController ()
 
@@ -26,13 +29,13 @@
     [super viewDidLoad];
   
     self.originalImage = [UIImage imageNamed:@"1"];
-    CGSize thumbnailSize = CGSizeMake(thumbanailWidth, thumbnailHeight);
+    CGSize thumbnailSize = CGSizeMake(THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT);
   
     UIGraphicsBeginImageContext(thumbnailSize);
-    [self.originalImage drawInRect:CGRectMake(xAxis, yAxis, thumbnailSize.width, thumbnailSize.height)];
+    [self.originalImage drawInRect:CGRectMake(IMAGE_X_AXIS, IMAGE_Y_AXIS, THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT)];
     UIImageView *imageView = [[UIImageView alloc]
-                            initWithFrame:CGRectMake(0, 80, thumbnailSize.width,
-                                                     thumbnailSize.height)];
+                            initWithFrame:CGRectMake(0, 80, THUMBNAIL_WIDTH,
+                                                     THUMBNAIL_HEIGHT)];
     [imageView setImage:UIGraphicsGetImageFromCurrentImageContext()];
     UIGraphicsEndImageContext();
   
@@ -47,7 +50,10 @@
 
 - (void)viewFullImageSize:(UIGestureRecognizer *)gr{
 
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 80, 320, 400)];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(IMAGE_X_AXIS,
+                                                                          IMAGE_Y_AXIS,
+                                                                          FULL_IMAGE_WIDTH,
+                                                                          FULL_IMAGE_HEIGHT)];
     [imageView setImage:self.originalImage];
     [self.view addSubview:imageView];
 }

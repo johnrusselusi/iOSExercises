@@ -7,8 +7,9 @@
 //
 
 #import "ControlViewController.h"
-#define bright 1.0
-#define dim 0.0
+
+static int const BRIGHT = 1.0;
+static int const DIM = 0.0;
 
 @interface ControlViewController ()
 
@@ -25,7 +26,7 @@
 
     self = [super init];
     self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.brightnessSlider value]];
-    self.tabBarItem.title = @"Control";
+    self.tabBarItem.title = [UIControl description];
   
     return self;
 }
@@ -40,13 +41,13 @@
     if (self.brightnessSwitch.on) {
     
         [self.textLabel setHidden:TRUE];
-        [UIScreen mainScreen].brightness = bright;
-        self.brightnessSlider.value = bright;
+        [UIScreen mainScreen].brightness = BRIGHT;
+        self.brightnessSlider.value = BRIGHT;
     } else {
     
         [self.textLabel setHidden:FALSE];
-        [UIScreen mainScreen].brightness = dim;
-        self.brightnessSlider.value = dim;
+        [UIScreen mainScreen].brightness = DIM;
+        self.brightnessSlider.value = DIM;
     }
   
     self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.brightnessSlider value]];
@@ -58,7 +59,7 @@
   
     self.sliderValue.text = [NSString stringWithFormat:@"%f", [self.brightnessSlider value]];
   
-    if (self.brightnessSlider.value == dim) {
+    if (self.brightnessSlider.value == DIM) {
     
         [self.brightnessSwitch setOn:FALSE animated:YES];
     }

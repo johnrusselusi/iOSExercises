@@ -22,7 +22,7 @@
 - (instancetype)init{
 
     self = [super init];
-    self.tabBarItem.title = @"Button";
+    self.tabBarItem.title = [UIButton description];
   
     return self;
 }

@@ -8,6 +8,8 @@
 
 #import "WebViewController.h"
 
+static NSString *const URL_STRING = @"http://zomato.com";
+
 @interface WebViewController () <NSURLConnectionDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -19,11 +21,9 @@
 
 - (void)viewDidLoad{
   
-    NSString *urlString = @"http://zomato.com";
-  
     [super viewDidLoad];
     void (^loadRequest)(void) = ^{
-        NSURL *url = [NSURL URLWithString:urlString];
+        NSURL *url = [NSURL URLWithString:URL_STRING];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                          cachePolicy:NSURLCacheStorageNotAllowed
                                                      timeoutInterval:20.0];

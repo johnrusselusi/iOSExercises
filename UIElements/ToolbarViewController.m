@@ -8,6 +8,10 @@
 
 #import "ToolbarViewController.h"
 
+static NSString *const PLAY_LABEL = @"Play";
+static NSString *const FFWD_LABEL = @"Fast Forward";
+static NSString *const REWIND_LABEL = @"Rewind";
+
 @interface ToolbarViewController ()
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *playBarItem;
@@ -22,16 +26,16 @@
 
 - (IBAction)playPressed:(id)sender {
   
-    self.textLabel.text = @"Play";
+    self.textLabel.text = PLAY_LABEL;
 }
 
 - (IBAction)ffwdPressed:(id)sender {
   
-    self.textLabel.text = @"Fast Forward";
+    self.textLabel.text = FFWD_LABEL;
 }
 
 - (IBAction)rewindPressed:(id)sender {
   
-    self.textLabel.text = @"Rewind";
+    self.textLabel.text = REWIND_LABEL;
 }
 @end

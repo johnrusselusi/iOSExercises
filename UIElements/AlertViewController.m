@@ -6,12 +6,13 @@
 //  Copyright (c) 2014 Klab Cyscorpions Training Center. All rights reserved.
 //
 
-#define bright 1.0
-#define dim 0.0
-#define brightButton "Bright"
-#define dimButton "Dim"
-
 #import "AlertViewController.h"
+
+static NSString *const BRIGHT_BUTTON = @"Bright";
+static NSString *const DIM_BUTTON = @"Dim";
+
+static float const BRIGHT = 1.0;
+static float const DIM = 0.0;
 
 @interface AlertViewController () <UIAlertViewDelegate>
 
@@ -27,7 +28,7 @@
                                                      message:@"Choose an option"
                                                     delegate:nil
                                            cancelButtonTitle:@"Cancel"
-                                           otherButtonTitles:@brightButton, @dimButton, nil];
+                                           otherButtonTitles:BRIGHT_BUTTON, DIM_BUTTON, nil];
     alertView.delegate = self;
   
     [alertView show];
@@ -38,12 +39,12 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
   
     NSString *buttonClicked = [alertView buttonTitleAtIndex:buttonIndex];
   
-    if ([buttonClicked isEqualToString:@brightButton]) {
+    if ([buttonClicked isEqualToString:BRIGHT_BUTTON]) {
     
-        [UIScreen mainScreen].brightness = bright;
-    } else if ([buttonClicked isEqualToString:@dimButton]) {
+        [UIScreen mainScreen].brightness = BRIGHT;
+    } else if ([buttonClicked isEqualToString:DIM_BUTTON]) {
   
-        [UIScreen mainScreen].brightness = dim;
+        [UIScreen mainScreen].brightness = DIM;
     }
 }
 @end

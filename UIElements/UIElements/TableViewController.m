@@ -19,6 +19,8 @@
 #import "ActionSheetViewController.h"
 #import "WebViewController.h"
 
+static NSString *const CELL_REUSE_IDENTIFIER = @"UITableViewCell";
+
 @interface TableViewController ()
 
 @property (nonatomic, strong) NSArray *viewControllers;
@@ -31,12 +33,10 @@
 
     [super viewDidLoad];
   
-    NSString *cellReuseIdentifier = @"UITableViewCell";
-  
     self.title = @"Main View Controller";
   
     [self.tableView registerClass:[UITableViewCell class]
-           forCellReuseIdentifier:cellReuseIdentifier];
+           forCellReuseIdentifier:CELL_REUSE_IDENTIFIER];
   
     self.viewControllers = [NSArray arrayWithObjects:[ButtonViewController description],
                             [ControlViewController description],
@@ -55,10 +55,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    NSString *cellReuseIdentifier = @"UITableViewCell";
   
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifier
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_REUSE_IDENTIFIER
                                                           forIndexPath:indexPath];
   
     cell.textLabel.text = self.viewControllers[indexPath.row];
@@ -72,57 +70,57 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
     
         ButtonViewController *bvc = [[ButtonViewController alloc]init];
-        bvc.title = @"UIButton";
+        bvc.title = [UIButton description];
         [self.navigationController pushViewController:bvc animated:YES];
         } else if (indexPath.row == 1) {
   
         ControlViewController *cvc = [[ControlViewController alloc]init];
-        cvc.title = @"UIControl";
+        cvc.title = [UIControl description];
         [self.navigationController pushViewController:cvc animated:YES];
         } else if (indexPath.row == 2) {
   
         TextViewController *tvc = [[TextViewController alloc]init];
-        tvc.title = @"UITextView";
+        tvc.title = [UITextView description];
         [self.navigationController pushViewController:tvc animated:YES];
         } else if (indexPath.row == 3) {
   
         PickerViewController *pvc = [[PickerViewController alloc]init];
-        pvc.title = @"UIPicker";
+        pvc.title = [UIPickerView description];
         [self.navigationController pushViewController:pvc animated:YES];
         } else if (indexPath.row == 4) {
       
         ImageViewController *ivc = [[ImageViewController alloc]init];
-        ivc.title = @"UIImageView";
+        ivc.title = [UIImageView description];
         [self.navigationController pushViewController:ivc animated:YES];
         } else if (indexPath.row == 5) {
       
         SegmentedViewController *svc = [[SegmentedViewController alloc]init];
-        svc.title = @"UISegmentedControl";
+        svc.title = [UISegmentedControl description];
         [self.navigationController pushViewController:svc animated:YES];
         } else if (indexPath.row == 6) {
       
         ToolbarViewController *tvc = [[ToolbarViewController alloc]init];
-        tvc.title = @"UIToolbar";
+        tvc.title = [UIToolbar description];
         [self.navigationController pushViewController:tvc animated:YES];
         } else if (indexPath.row == 7) {
       
         TabBarViewController *tvc = [[TabBarViewController alloc]init];
-        tvc.title = @"UITabBar";
+        tvc.title = [UITabBar description];
         [self.navigationController pushViewController:tvc animated:YES];
         } else if (indexPath.row == 8) {
       
         AlertViewController *avc = [[AlertViewController alloc]init];
-        avc.title = @"Alert View Controller";
+        avc.title = [UIAlertView description];
         [self.navigationController pushViewController:avc animated:YES];
         } else if (indexPath.row == 9) {
       
         ActionSheetViewController *avc = [[ActionSheetViewController alloc]init];
-        avc.title = @"UIActionSheet";
+        avc.title = [UIActionSheet description];
         [self.navigationController pushViewController:avc animated:YES];
         } else if (indexPath.row == 10) {
       
         WebViewController *wvc = [[WebViewController alloc]init];
-        wvc.title = @"UIWebView";
+        wvc.title = [UIWebView description];
         [self.navigationController pushViewController:wvc animated:YES];
       }
 }
