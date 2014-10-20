@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  UIElements
 //
-//  Created by John Russel Usi on 10/15/14.
+//  Created by John Russel Usi on 10/16/14.
 //  Copyright (c) 2014 Klab Cyscorpions Training Center. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "TableViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+  
+    TableViewController *tableViewController = [[TableViewController alloc]init];
+    UINavigationController *navigationController = [[UINavigationController alloc]
+                                                  initWithRootViewController:tableViewController];
+  
+    self.window.rootViewController = navigationController;
+  
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

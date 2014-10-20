@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ControlViewController.h
 //  UIElements
 //
 //  Created by John Russel Usi on 10/16/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface ControlViewController : UIViewController
 
 @end

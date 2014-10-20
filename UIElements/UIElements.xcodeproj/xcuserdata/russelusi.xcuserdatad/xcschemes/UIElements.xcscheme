@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19F371F719EE60B0004FD321"
+               BlueprintIdentifier = "19A4909519EF92000000FC82"
                BuildableName = "UIElements.app"
                BlueprintName = "UIElements"
                ReferencedContainer = "container:UIElements.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19F3721219EE60B0004FD321"
+               BlueprintIdentifier = "19A490B019EF92000000FC82"
                BuildableName = "UIElementsTests.xctest"
                BlueprintName = "UIElementsTests"
                ReferencedContainer = "container:UIElements.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19F371F719EE60B0004FD321"
+            BlueprintIdentifier = "19A4909519EF92000000FC82"
             BuildableName = "UIElements.app"
             BlueprintName = "UIElements"
             ReferencedContainer = "container:UIElements.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19F371F719EE60B0004FD321"
+            BlueprintIdentifier = "19A4909519EF92000000FC82"
             BuildableName = "UIElements.app"
             BlueprintName = "UIElements"
             ReferencedContainer = "container:UIElements.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19F371F719EE60B0004FD321"
+            BlueprintIdentifier = "19A4909519EF92000000FC82"
             BuildableName = "UIElements.app"
             BlueprintName = "UIElements"
             ReferencedContainer = "container:UIElements.xcodeproj">
