@@ -8,12 +8,6 @@
 
 #import "PauseScreenViewController.h"
 
-
-
-@interface PauseScreenViewController ()
-
-@end
-
 @implementation PauseScreenViewController
 
 - (IBAction)pauseButtonMethod:(id)sender {

@@ -17,24 +17,22 @@
 
 @implementation GameViewController
 
-
-
 - (IBAction)pauseButtonPressed:(id)sender {
   
-  PauseScreenViewController *pauseGame = [[PauseScreenViewController alloc]init];
-  
-  pauseGame.delegate = self;
-  [self.navigationController pushViewController:pauseGame animated:YES];
+    PauseScreenViewController *pauseGame = [[PauseScreenViewController alloc]init];
+      
+    pauseGame.delegate = self;
+    [self.navigationController pushViewController:pauseGame animated:YES];
 }
 
 - (void)viewDidLoad{
   
-  [super viewDidLoad];
+    [super viewDidLoad];
   
 }
 
 - (void)pauseGameDelegateMethod{
 
-  NSLog(@"Successfully called the Custom Delegate Method");
+    NSLog(@"Successfully called the Custom Delegate Method");
 }
 @end
