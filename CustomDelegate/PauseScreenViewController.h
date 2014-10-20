@@ -16,6 +16,6 @@
 
 @interface PauseScreenViewController : UIViewController
 
-@property (nonatomic, weak)id<PauseScreenViewControllerDelegate>delegate;
+@property (nonatomic, retain)id<PauseScreenViewControllerDelegate>delegate;
 
 @end

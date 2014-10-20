@@ -13,17 +13,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
   // Override point for customization after application launch.
   
-  GameViewController *gvc = [[GameViewController alloc]init];
-  UINavigationController *navigationController = [[UINavigationController alloc]
-                                                  initWithRootViewController:gvc];
+  GameViewController *gvc = [[[GameViewController alloc]init]autorelease];
+  UINavigationController *navigationController = [[[UINavigationController alloc]
+                                                  initWithRootViewController:gvc] autorelease];
   
   self.window.rootViewController = navigationController;
   
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
+  
   return YES;
 }
 

@@ -11,13 +11,11 @@
 
 @interface GameViewController () <PauseScreenViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
+@property (nonatomic) IBOutlet UIButton *pauseButton;
 
 @end
 
 @implementation GameViewController
-
-
 
 - (IBAction)pauseButtonPressed:(id)sender {
   
@@ -30,11 +28,11 @@
 - (void)viewDidLoad{
   
   [super viewDidLoad];
-  
 }
 
 - (void)pauseGameDelegateMethod{
 
   NSLog(@"Successfully called the Custom Delegate Method");
 }
+
 @end

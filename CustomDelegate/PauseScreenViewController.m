@@ -8,8 +8,6 @@
 
 #import "PauseScreenViewController.h"
 
-
-
 @interface PauseScreenViewController ()
 
 @end
