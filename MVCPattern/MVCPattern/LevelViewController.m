@@ -51,8 +51,6 @@
     ItemModel *item = [[[ItemModel alloc]initWithDictionary:self.itemsDictionary] autorelease];
     [self.arrayOfItemModel addObject:item];
     
-    [item release];
-    
     [self.levelArray addObject:self.itemsDictionary];
   }
   
@@ -101,4 +99,32 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
   return [self init];
 }
+
+- (void)dealloc{
+
+    
+    [_filePath release];
+    _filePath = nil;
+    
+    [_itemsArray release];
+    _itemsArray = nil;
+    
+    [_filteredArray release];
+    _filteredArray = nil;
+    
+    [_itemsDictionary release];
+    _itemsDictionary = nil;
+    
+    [_levelArray release];
+    _levelArray = nil;
+    
+    [_arrayOfItemModel release];
+    _arrayOfItemModel = nil;
+    
+    [_itemTitleForCell release];
+    _itemTitleForCell = nil;
+    
+    [super dealloc];
+}
+
 @end
